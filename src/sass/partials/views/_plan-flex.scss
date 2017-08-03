@@ -25,15 +25,13 @@ $color-sitz-border-hover: #a10090;
 .abschnitt {
   position: relative;
   pointer-events: none;
-  border: 1px solid saddlebrown;
+//  border: 1px solid saddlebrown;
 
 }
 
 .reihe {
   position: relative;
-  font-size: 4px;
   display: flex;
-
 }
 
 .sitz {
@@ -45,9 +43,21 @@ $color-sitz-border-hover: #a10090;
 
   background-color: white;
   pointer-events: all;
-  border: solid 1px white;
-
+  margin: 1px;
 }
+
+.versetzt {
+  left: 9px;
+}
+
+.mitte-abschnitt-links{
+  padding-left: 20px;
+}
+
+.mitte-abschnitt-rechts{
+  padding-right: 20px;
+}
+
 
 // Kategorien:
 
@@ -96,10 +106,6 @@ $color-sitz-border-hover: #a10090;
   padding: 0;
 }
 
-.plan-title {
-  color: #4ab92f;
-
-}
 
 #bestuhlungs-layout {
   text-align: center;
@@ -110,18 +116,32 @@ $color-sitz-border-hover: #a10090;
 }
 
 #buehne {
-  padding-top: 13px;
+  // inhalt einmitten
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  // Farbe
   background-color: $color-aufbauten;
 
+  // Grösse
   width: 500px;
   height: 50px;
 
 }
 
 #orchestergraben {
-  padding-top: 20px;
+  // inhalt einmitten
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  // Farbe
   background-color: $color-aufbauten;
 
+  // Grösse
   width: 250px;
   height: 70px;
 
@@ -135,47 +155,30 @@ $color-sitz-border-hover: #a10090;
   font-size: 15px;
 }
 
-// kategorien
 
 .rollstuhl {
-  background-color: #0bcb9a;
-  margin-top: 30px;
+  background-color: #5139cb;
+  margin-top: 20px;
 }
 
 .rechts .rollstuhl {
-  background-color: #3f0000;
-  margin-left: 50px;
-
+  margin-left: 40px;
 }
 
 .links .rollstuhl {
-  background-color: #3f0000;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
-.versetzt {
-  left: 9px;
-}
 
-.versetzt-links {
-  position: relative;
-  left: 9px;
-}
-
-.versetzt-rechts {
-  position: relative;
-  left: -9px;
-}
 
 .links.abgewinkelt,
 .rechts.abgewinkelt {
   position: relative;
-  top: -20px;
+   top: -20px;
 }
 
 .links.abgewinkelt {
   transform: skewY(25deg);
-
 }
 
 .links.abgewinkelt .reihe {
@@ -185,9 +188,7 @@ $color-sitz-border-hover: #a10090;
 }
 
 .rechts.abgewinkelt {
-
   transform: skewY(-25deg);
-
 }
 
 .rechts.abgewinkelt .reihe {
@@ -195,6 +196,7 @@ $color-sitz-border-hover: #a10090;
   transform: skewY(25deg);
   top: 25px;
 }
+
 
 #plan-content {
   background-color: #fffbfd;
@@ -210,21 +212,51 @@ $color-sitz-border-hover: #a10090;
 /*==========  Non-Mobile First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 1201px) {
 
   .sitz {
-    width: 10px;
-    height: 12px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .sitz:hover {
+  }
+
+  #buehne {
+    width: 400px;
+    height: 40px;
+  }
+
+  #orchestergraben {
+    width: 250px;
+    height: 60px;
+  }
+
+  .beschriftung {
+    font-size: 15px;
+  }
+
+  .bereich.vorne,
+  .bereich.mitte,
+  .bereich.balkon {
+    margin-top: 20px;
+  }
+
+  .versetzt {
+    left: 9px;
+  }
+
+
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+  .sitz {
+    width: 15px;
+    height: 15px;
   }
 
   .sitz:hover {
@@ -246,11 +278,51 @@ $color-sitz-border-hover: #a10090;
 
 }
 
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+  .sitz {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+  }
+
+  .sitz:hover {
+  }
+
+
+  .versetzt {
+    left: 9px;
+  }
+
+
+
+
+  #buehne {
+    width: 300px;
+    height: 30px;
+  }
+
+  #orchestergraben {
+    width: 200px;
+    height: 60px;
+  }
+
+  .beschriftung {
+    font-size: 15px;
+  }
+
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 500px) {
 
   .abschnitt {
-    border: solid 1px black;
   }
 
   .reihe {
@@ -258,18 +330,18 @@ $color-sitz-border-hover: #a10090;
   }
 
   .sitz {
-    width: 5px;
+    width: 10px;
     height: 10px;
-
-    margin: 0;
-    padding: 0;
-    border: none;
     border-radius: 0;
+    margin: 0;
 
   }
 
+  .versetzt {
+    left: 0;
+  }
+
   #buehne {
-    padding-top: 3px;
     width: 200px;
     height: 20px;
   }
@@ -284,36 +356,37 @@ $color-sitz-border-hover: #a10090;
     font-size: 12px;
   }
 
-  .bereich.vorne {
-    margin-top: 10px;
-  }
-
-  .bereich.mitte {
-    margin-top: 10px;
-  }
-
+  .bereich.vorne,
+  .bereich.mitte,
   .bereich.balkon {
-    margin-top: 10px;
+    margin-top: 5px;
 
   }
+
+  .mitte-abschnitt-links{
+    padding-left: 5px;
+  }
+
+  .mitte-abschnitt-rechts{
+    padding-right: 5px;
+  }
+
+
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   .sitz {
-    display: none;
   }
 
   #buehne {
-    padding-top: 3px;
 
     width: 200px;
     height: 20px;
   }
 
   #orchestergraben {
-    padding-top: 7px;
 
     width: 100px;
     height: 30px;
