@@ -1,0 +1,343 @@
+$color-aufbauten: #d2d2d2;
+$color-aufbauten-beschriftung: gray;
+
+$color-sitz-border: white;
+$color-sitz-border-hover: #a10090;
+
+.bereich {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.bereich.vorne {
+  margin-top: 10px;
+}
+
+.bereich.mitte {
+  margin-top: 10px;
+}
+
+.bereich.balkon {
+  margin-top: 10px;
+}
+
+.abschnitt {
+  position: relative;
+  pointer-events: none;
+  border: 1px solid saddlebrown;
+
+}
+
+.reihe {
+  position: relative;
+  font-size: 4px;
+  display: flex;
+
+}
+
+.sitz {
+  position: relative;
+  width: 15px;
+  height: 15px;
+
+  border-radius: 10px;
+
+  background-color: white;
+  pointer-events: all;
+  border: solid 1px white;
+
+}
+
+// Kategorien:
+
+.p-30 {
+  background-color: #ad70bb;
+}
+
+.p-40 {
+  background-color: #397a8b;
+}
+
+.p-50 {
+  background-color: #86b884;
+}
+
+.p-55 {
+  background-color: #8e9de2;
+}
+
+.p-60 {
+  background-color: #cbbb39;
+}
+
+.p-70 {
+  background-color: #006400;
+}
+
+.p-75 {
+  background-color: deepskyblue;
+}
+
+.sitz:hover {
+  background-color: $color-sitz-border-hover;
+  cursor: pointer;
+  border-color: $color-sitz-border-hover;
+}
+
+.versteckt {
+  background-color: transparent;
+  border-color: #c2c2c2;
+}
+
+#plan-content {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan-title {
+  color: #4ab92f;
+
+}
+
+#bestuhlungs-layout {
+  text-align: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#buehne {
+  padding-top: 13px;
+  background-color: $color-aufbauten;
+
+  width: 500px;
+  height: 50px;
+
+}
+
+#orchestergraben {
+  padding-top: 20px;
+  background-color: $color-aufbauten;
+
+  width: 250px;
+  height: 70px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.beschriftung {
+  color: $color-aufbauten-beschriftung;
+  font-size: 15px;
+}
+
+// kategorien
+
+.rollstuhl {
+  background-color: #0bcb9a;
+  margin-top: 30px;
+}
+
+.rechts .rollstuhl {
+  background-color: #3f0000;
+  margin-left: 50px;
+
+}
+
+.links .rollstuhl {
+  background-color: #3f0000;
+  margin-right: 50px;
+}
+
+.versetzt {
+  left: 9px;
+}
+
+.versetzt-links {
+  position: relative;
+  left: 9px;
+}
+
+.versetzt-rechts {
+  position: relative;
+  left: -9px;
+}
+
+.links.abgewinkelt,
+.rechts.abgewinkelt {
+  position: relative;
+  top: -20px;
+}
+
+.links.abgewinkelt {
+  transform: skewY(25deg);
+
+}
+
+.links.abgewinkelt .reihe {
+  position: relative;
+  transform: skewY(-25deg);
+  top: -24px;
+}
+
+.rechts.abgewinkelt {
+
+  transform: skewY(-25deg);
+
+}
+
+.rechts.abgewinkelt .reihe {
+  position: relative;
+  transform: skewY(25deg);
+  top: 25px;
+}
+
+#plan-content {
+  background-color: #fffbfd;
+  color: black;
+  width: 100vw;
+}
+
+#bestuhlungs-layout {
+  position: relative;
+  width: 100vw;
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+  .sitz {
+    width: 10px;
+    height: 12px;
+  }
+
+  .sitz:hover {
+  }
+
+  #buehne {
+    width: 300px;
+    height: 30px;
+  }
+
+  #orchestergraben {
+    width: 200px;
+    height: 60px;
+  }
+
+  .beschriftung {
+    font-size: 15px;
+  }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 500px) {
+
+  .abschnitt {
+    border: solid 1px black;
+  }
+
+  .reihe {
+
+  }
+
+  .sitz {
+    width: 5px;
+    height: 10px;
+
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+
+  }
+
+  #buehne {
+    padding-top: 3px;
+    width: 200px;
+    height: 20px;
+  }
+
+  #orchestergraben {
+    padding-top: 7px;
+    width: 100px;
+    height: 30px;
+  }
+
+  .beschriftung {
+    font-size: 12px;
+  }
+
+  .bereich.vorne {
+    margin-top: 10px;
+  }
+
+  .bereich.mitte {
+    margin-top: 10px;
+  }
+
+  .bereich.balkon {
+    margin-top: 10px;
+
+  }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .sitz {
+    display: none;
+  }
+
+  #buehne {
+    padding-top: 3px;
+
+    width: 200px;
+    height: 20px;
+  }
+
+  #orchestergraben {
+    padding-top: 7px;
+
+    width: 100px;
+    height: 30px;
+  }
+
+  .beschriftung {
+    font-size: 12px;
+  }
+
+  .bereich.vorne {
+    margin-top: 10px;
+  }
+
+  .bereich.mitte {
+    margin-top: 10px;
+  }
+
+  .bereich.balkon {
+    margin-top: 10px;
+
+  }
+
+}
+
+
+
+

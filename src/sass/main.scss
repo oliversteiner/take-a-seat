@@ -1,0 +1,89 @@
+// Design
+@import 'partials/design/colors';
+@import 'partials/design/fonts';
+@import 'partials/design/button';
+@import 'partials/design/form';
+
+
+// Utilitis
+@import 'partials/utilities/messages';
+@import "partials/utilities/effects";
+
+// Views
+@import 'partials/views/console';
+@import 'partials/views/footer';
+@import "partials/views/help";
+@import "partials/views/modal_center";
+@import "partials/views/plan-flex";
+
+// Editor
+@import "editor/design/_colors.scss";
+@import "editor/buttons";
+@import "editor/editor";
+@import "editor/pictos";
+@import "editor/views/slides";
+@import "editor/views/devices";
+@import "editor/views/side_toolbar";
+@import "editor/views/top_toolbar";
+
+// Panels
+@import "partials/panels/panel";
+@import "partials/panels/details";
+
+
+
+
+// Well
+// -----------------------------
+
+.well-nicer {
+}
+
+.well-transparent {
+  background: none;
+}
+
+.well-nicer-light {
+  padding: 0;
+  margin: 0;
+}
+
+// Navigation
+// -----------------------------
+
+.navbar-nicer {
+  background-color: $color-background;;
+}
+
+.navbar-nicer:hover .navbar-nav > li > a {
+  color: $color-nav-text;
+}
+
+.navbar-nicer:hover .navbar-nav > li > a:hover {
+  color: $color-text-link-hover
+}
+
+.navbar-nicer:hover .navbar-nav > li > a:active {
+  color: $color-text-link-active
+}
+
+.navbar-nicer .navbar-nav > li > a {
+  color: $color-background;
+
+}
+
+
+// Editor
+// -----------------------------
+body.editor-active main,
+body.editor-active header,
+body.editor-active nav,
+body.editor-active footer {
+  margin-left: 40px;
+}
+
+
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  margin-left: 60px;
+}

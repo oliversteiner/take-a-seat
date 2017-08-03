@@ -1,0 +1,18 @@
+# IntelliJ project files
+.idea
+*.iml
+
+# node
+node_modules
+
+#libraries
+web/libraries
+
+gen### macOS template
+# General
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
