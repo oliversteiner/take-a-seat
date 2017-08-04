@@ -15,6 +15,9 @@ $(document).ready(function () {
     // Editor
     tasEditor = new TasEditor();
     tasEditor.start();
+    // Editor
+    seatSelectController = new SeatSelectController();
+    seatSelectController.start();
     // ------- Start Debug
     // ------- End Debug
     // toggle Editor

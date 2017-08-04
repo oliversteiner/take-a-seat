@@ -12,6 +12,9 @@ declare let panels: any;
 // Console
 declare let consoleController: any;
 
+declare let seatSelectController: any;
+
+
 // others
 
 
@@ -41,6 +44,10 @@ $(document).ready(function () {
     tasEditor = new TasEditor();
     tasEditor.start();
 
+
+    // Editor
+    seatSelectController = new SeatSelectController();
+    seatSelectController.start();
 
     // ------- Start Debug
 

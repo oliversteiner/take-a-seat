@@ -25,7 +25,6 @@ $color-sitz-border-hover: #a10090;
 .abschnitt {
   position: relative;
   pointer-events: none;
-//  border: 1px solid saddlebrown;
 
 }
 
@@ -50,14 +49,13 @@ $color-sitz-border-hover: #a10090;
   left: 9px;
 }
 
-.mitte-abschnitt-links{
+.mitte-abschnitt-links {
   padding-left: 20px;
 }
 
-.mitte-abschnitt-rechts{
+.mitte-abschnitt-rechts {
   padding-right: 20px;
 }
-
 
 // Kategorien:
 
@@ -105,7 +103,6 @@ $color-sitz-border-hover: #a10090;
   margin: 0;
   padding: 0;
 }
-
 
 #bestuhlungs-layout {
   text-align: center;
@@ -155,7 +152,6 @@ $color-sitz-border-hover: #a10090;
   font-size: 15px;
 }
 
-
 .rollstuhl {
   background-color: #5139cb;
   margin-top: 20px;
@@ -169,12 +165,10 @@ $color-sitz-border-hover: #a10090;
   margin-right: 40px;
 }
 
-
-
 .links.abgewinkelt,
 .rechts.abgewinkelt {
   position: relative;
-   top: -20px;
+  top: -20px;
 }
 
 .links.abgewinkelt {
@@ -197,7 +191,6 @@ $color-sitz-border-hover: #a10090;
   top: 25px;
 }
 
-
 #plan-content {
   background-color: #fffbfd;
   color: black;
@@ -207,6 +200,17 @@ $color-sitz-border-hover: #a10090;
 #bestuhlungs-layout {
   position: relative;
   width: 100vw;
+}
+
+
+.abschnitt-name{
+  position: absolute;
+  flex: inherit;
+  z-index: 2;
+  margin-top: 10px;
+  margin-left: auto;
+  width: 100%;
+  font-size: 9px;
 }
 
 /*==========  Non-Mobile First Method  ==========*/
@@ -245,9 +249,6 @@ $color-sitz-border-hover: #a10090;
   .versetzt {
     left: 9px;
   }
-
-
-
 
 }
 
@@ -295,13 +296,9 @@ $color-sitz-border-hover: #a10090;
   .sitz:hover {
   }
 
-
   .versetzt {
     left: 9px;
   }
-
-
-
 
   #buehne {
     width: 300px;
@@ -323,6 +320,15 @@ $color-sitz-border-hover: #a10090;
 @media only screen and (max-width: 500px) {
 
   .abschnitt {
+    position: relative;
+    pointer-events: all;
+    cursor: pointer;
+    background-color: transparent;
+    opacity: 0.5;
+  }
+
+  .abschnitt:hover{
+    opacity: 1;
   }
 
   .reihe {
@@ -334,7 +340,7 @@ $color-sitz-border-hover: #a10090;
     height: 10px;
     border-radius: 0;
     margin: 0;
-
+    pointer-events: none;
   }
 
   .versetzt {
@@ -363,20 +369,19 @@ $color-sitz-border-hover: #a10090;
 
   }
 
-  .mitte-abschnitt-links{
+  .mitte-abschnitt-links {
     padding-left: 5px;
   }
 
-  .mitte-abschnitt-rechts{
+  .mitte-abschnitt-rechts {
     padding-right: 5px;
   }
-
-
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
+
   .sitz {
   }
 
@@ -408,9 +413,27 @@ $color-sitz-border-hover: #a10090;
     margin-top: 10px;
 
   }
-
 }
 
 
+#solo-dock {
+  .abschnitt {
+    pointer-events: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    opacity: 1;
 
 
+
+  }
+
+  .sitz {
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+    pointer-events: all;
+  }
+
+}
