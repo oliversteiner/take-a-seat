@@ -3,6 +3,7 @@ $color-aufbauten-beschriftung: gray;
 
 $color-sitz-border: white;
 $color-sitz-border-hover: #a10090;
+$color-miniplan-sitze : #737373;
 
 .bereich {
   position: relative;
@@ -415,6 +416,7 @@ $color-sitz-border-hover: #a10090;
   }
 }
 
+// SOLO --------------------
 
 #solo-dock {
   .abschnitt {
@@ -434,6 +436,95 @@ $color-sitz-border-hover: #a10090;
     height: 25px;
     margin: 2px;
     pointer-events: all;
+  }
+
+}
+
+
+// uebersicht --------------------
+
+
+#plan-content.uebersicht-modus {
+
+  .abschnitt {
+    position: relative;
+    pointer-events: all;
+    cursor: pointer;
+    background-color: transparent;
+    opacity: 0.5;
+  }
+
+  .abschnitt:hover{
+    opacity: 1;
+  }
+
+
+  .bereich.vorne,
+  .bereich.mitte,
+  .bereich.balkon {
+    margin-top: 5px;
+  }
+
+  .reihe {
+
+  }
+
+  .sitz {
+    width: 2px;
+    height: 2px;
+    border-radius: 0;
+    margin: 0;
+    pointer-events: none;
+  }
+
+  .abschnitt-name{
+    display: none;
+  }
+
+  .versetzt {
+    left: 0;
+  }
+
+  #buehne {
+    width: 50px;
+    height: 10px;
+  }
+
+  #orchestergraben {
+    padding-top: 7px;
+    width: 40px;
+    height: 6px;
+  }
+
+  .beschriftung {
+  display: none;
+  }
+
+  .bereich.vorne,
+  .bereich.mitte,
+  .bereich.balkon {
+    margin-top: 5px;
+
+  }
+
+  .mitte-abschnitt-links {
+    padding-left: 5px;
+  }
+
+  .mitte-abschnitt-rechts {
+    padding-right: 5px;
+  }
+
+  // Farben:
+
+  .p-30,
+  .p-40,
+  .p-50,
+  .p-55,
+  .p-60,
+  .p-70,
+  .p-75 {
+    background-color: $color-miniplan-sitze;
   }
 
 }
