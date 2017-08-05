@@ -1,0 +1,77 @@
+.ticket-liste-tag,
+.ticket-liste-datum,
+.ticket-liste-zeit,
+.ticket-liste-info {
+  font-size: 20px;
+
+  position: relative;
+  display: inline-block;
+  min-width: 50px;
+  //  border: solid 1px skyblue;
+  height: 100%;
+
+}
+
+.ticket-liste-tag {
+  padding-left: 10px;
+  width: 70px;
+  color: gray;
+}
+
+.ticket-liste-datum {
+  font-weight: bold;
+  font-weight: 900;
+  width: 80px;
+}
+
+.ticket-liste-zeit {
+  width: 80px;
+  color: gray;
+
+}
+
+.ticket-liste-info {
+  font-size: 13px;
+  padding: 1px;
+  margin: 1px;
+}
+
+.ticket-liste-kopf {
+  display: flex;
+  text-align: center;
+  border-bottom: solid 1px #6DC8BB;
+  justify-content: space-between;
+
+  h2 {
+    display: inline-block;
+    font-size: 24px;
+    color: #6DC8BB;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  span.glyphicon {
+    display: flex;
+
+    // border: 1px solid silver;
+
+    width: 60px;
+    height: 44px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #d2d2d2;
+    padding: 0 20px;
+  }
+
+}
+
+
+.list-group-tickets .list-group-item{
+  border: none;
+  border-bottom: 2px solid silver;
+}
+
+.list-group-tickets .ticket-liste-trenner{
+border: none;
+}

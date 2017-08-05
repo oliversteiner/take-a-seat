@@ -1,0 +1,175 @@
+section.section-ticket {
+
+  div, p, h1, h2, h3, h4, ul, ol, a {
+    font-family: "Lato", SFUIText, "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+  }
+
+  // iphone 7 size
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+
+  // Text
+  border: 1px solid gainsboro;
+
+  header {
+
+    margin: 0;
+    padding: 0;
+  }
+
+  article {
+
+    margin: 0;
+    padding: 0;
+  }
+
+  footer {
+    margin: 0;
+    padding: 20px;
+
+  }
+
+}
+
+// Blöcke ------------------------------
+
+.block-navigation {
+  // border: 1px solid silver;
+
+  // Grösse
+  min-height: 44px;
+}
+
+.block-titel {
+  //  border: 1px solid silver;
+
+  // Grösse
+  min-height: 50px;
+
+  // Abstand
+  margin: 0 20px;
+  padding: 10px;
+
+  // Textausrichtung
+  text-align: center;
+  vertical-align: middle;
+
+  h1 {
+    font-size: 30px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.block-anleitung {
+  // border: 1px solid silver;
+
+  // Grösse
+  min-height: 50px;
+
+  // Abstand
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+
+  // Textausrichtung
+  text-align: center;
+  vertical-align: top;
+
+  h2 {
+    font-size: 19px;
+    line-height: 23px;
+    color: #21a08e;
+
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// Debug ------------------------------
+
+.debug-page-name {
+  position: absolute;
+  left: 49vw;
+
+  font-size: 12px;
+
+}
+
+// buttons  ------------------------------
+
+.btn-tas-zurueck {
+
+  background-color: white;
+  border-color: transparent;
+
+  /* Back: */
+
+  font-size: 17px;
+  color: #9B9B9B;
+
+}
+
+.btn-tas-weiter {
+  /* BG: */
+  background: #E1F5CC;
+  border: 1px solid #CCCCCC;
+  border-radius: 16px;
+
+  /* 12:12:12:12: */
+  font-size: 14px;
+  color: #666666;
+  line-height: 21px;
+
+  &:hover {
+    background: #93c183;
+
+  }
+}
+
+.btn-tas-weiter.disabled {
+  /* BG: */
+  border: 1px solid #CCCCCC;
+  background-color: transparent;
+
+}
+
+.button-active {
+
+}
+
+.btn-tas-active {
+  background: #E1F5CC;
+  border: 1px solid #CCCCCC;
+  border-radius: 16px;
+
+  font-size: 14px;
+  color: #666666;
+  line-height: 21px;
+}
+
+.btn-tas-deactivated {
+
+}
+
+// Text Styles --------------------------
+
+.text-klein {
+  font-size: 16px;
+  color: #333333;
+}
+
+.info-normal {
+  font-size: 13px;
+  color: #4A4A4A;
+}
+
+
+
+
+
+
+

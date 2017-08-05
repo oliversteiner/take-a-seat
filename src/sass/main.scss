@@ -8,24 +8,25 @@
 // Utilitis
 @import 'partials/utilities/messages';
 @import "partials/utilities/effects";
+@import "partials/utilities/piktos";
 
 // Views
 @import 'partials/views/console';
 @import 'partials/views/footer';
 @import "partials/views/help";
 @import "partials/views/modal_center";
-@import "partials/views/tickets/plan";
+@import "tickets/plan";
 
 
 // Tickets
-@import "partials/views/tickets/tickets";
+@import "tickets/tickets";
 
-@import "partials/views/tickets/plan";
-@import "partials/views/tickets/start";
-@import "partials/views/tickets/datum";
-@import "partials/views/tickets/sitzplatz";
-@import "partials/views/tickets/adresse";
-@import "partials/views/tickets/zusammenfassung";
+@import "tickets/plan";
+@import "tickets/start";
+@import "tickets/datum";
+@import "tickets/sitzplatz";
+@import "tickets/adresse";
+@import "tickets/zusammenfassung";
 
 
 
