@@ -4,6 +4,8 @@ var SeatSelectController = (function () {
     }
     SeatSelectController.prototype.start = function () {
         this.addEventListeners();
+        sitzeVierschieben('links');
+        sitzeVierschieben('rechts');
     };
     SeatSelectController.prototype.addEventListeners = function () {
         // toggle

@@ -1,5 +1,15 @@
+/**
+ *  Nicer Panel Controller
+ *  v 1.0.1
+ *
+ *  History:
+ *
+ *  v 1.0.1
+ *  - ""toggle-button" gewechselt zu "button-toggle"
+ */
 var Panel = (function () {
     function Panel(name) {
+        console.log('PanelController: ' + name);
         this.name = name;
         var panel = '#nicer-panel-' + this.name;
         this.$panel = $(panel);
@@ -47,14 +57,14 @@ var PanelController = (function () {
         var panel_name = panel_id.replace('-content', '');
         $panel.hide();
         // Close
-        var closeButton = '#' + panel_id + ' .-close-button';
+        var closeButton = '.' + panel_id + ' .-button-close';
         var $closeButton = $(closeButton);
         // -- add EventListener
         $closeButton.click(function () {
             $panel.hide();
         });
-        // Toggle Close
-        var toggleButton = '.' + panel_id + '-toggle-button';
+        // Toggle toggle
+        var toggleButton = '.' + panel_id + '-button-toggle';
         var $toggleButton = $(toggleButton);
         // -- add EventListener
         $toggleButton.click(function () {
@@ -84,7 +94,7 @@ var PanelController = (function () {
         });
         // options
         // --------------------------------------
-        var options_button = '#' + panel_id + ' .nicer-panel-option-button';
+        var options_button = '#' + panel_id + ' .nicer-panel-button-options';
         var $options_button = $(options_button);
         // -- add EventListener
         $options_button.click(function () {
@@ -96,7 +106,7 @@ var PanelController = (function () {
         });
         // close
         // -- add EventListener
-        $('.nicer-panel-close-button').click(function () {
+        $('.nicer-panel-button-close').click(function () {
             var $close_button = $(this).parent().parent();
             console.log($close_button);
             $close_button.hide();
@@ -114,7 +124,7 @@ var PanelController = (function () {
         var $flipConteiner = $(flipConteiner);
         if ($flipConteiner) {
             // content
-            var flipButton = '#' + panel_id + ' .flip-toggle-button';
+            var flipButton = '#' + panel_id + ' .flip-button-toggle';
             var $flipButton = $(flipButton);
             // -- add EventListener
             $flipButton.click(function () {

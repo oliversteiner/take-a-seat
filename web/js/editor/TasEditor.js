@@ -2,14 +2,32 @@ var TasEditor = (function () {
     //  private editorDevicesController: EditorDevicesController;
     function TasEditor() {
         console.log('TasEditor');
-        // load
-        //    this.editorDevicesController = new EditorDevicesController();
     }
+    TasEditor.prototype.test = function () {
+        console.log('TasEditor:test');
+        return false;
+    };
     TasEditor.prototype.start = function () {
-        //   EditorSlidesController.open();
+        console.log('TasEditor:start');
+        this.addEventListeners();
+        return false;
     };
     TasEditor.prototype.addEventListeners = function () {
-        // toggle
+        console.log('TasEditor: addEventListeners');
+        var scope = this;
+        // activateEditor
+        $('.editor-button-toggle').click(scope.activateEditor);
+        return false;
+    };
+    /**
+     * activateEditor
+     *
+     */
+    TasEditor.prototype.activateEditor = function () {
+        console.log('Editor aktiviert');
+        // editor modus einschalten
+        $('#editor').toggle();
+        $('body').toggleClass('editor-active');
     };
     return TasEditor;
 }());
