@@ -6,9 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
-    <title>Please Take a Seat</title>
 
     <link rel="stylesheet" href="libraries/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libraries/bootstrap/bootstrap-theme.min.css">
+
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/images/icon/apple-icon-57x57.png">
@@ -30,9 +31,12 @@
     <!-- Google Font Muli-->
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
+    <title>Take a Seat</title>
+
+
 </head>
 <body class="">
-<nav class="navbar navbar-default navbar-nicer" id="main_navigation">
+<nav class="navbar navbar-default" id="main_navigation">
     <!-- inject:views/main_navigation.html -->
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,7 +48,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Please Take A Seat</a>
+        <a class="navbar-brand" href="#"> Take a Seat</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,7 +56,9 @@
         <ul class="nav  navbar-nav">
             <li><a class="console-button-toggle"><span class="glyphicon glyphicon-console"></span></a></li>
             <li><a class="help-button-toggle " data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a></li>
-            <li><a class="editor-button-toggle">Editor</a></li>
+            <li><a class="editor-button-toggle">Editor-Modus</a></li>
+            <li><a class="nicer-panel-tas-button-toggle">TAS-Panel</a></li>
+            <li><a class="nicer-panel-blank-button-toggle">Blanko-Panel</a></li>
         </ul>
 
         <ul class="nav  navbar-right">
@@ -70,7 +76,7 @@
 <main>
 
     <div id="plan-container">
-        <!-- inject:views/plan.html -->
+        <!-- inject:views/tickets/plan.html -->
         <div id="plan-content" class="uebersicht-modus">
 
 
@@ -1189,6 +1195,57 @@
         <!-- endinject -->
     </div>
 
+
+
+    <!-- start -->
+    <div id="start-container">
+        <!-- inject:views/tickets/start.html -->
+        <div id="start-content">
+    <h1>Start</h1>
+</div>
+        <!-- endinject -->
+    </div>
+
+
+    <!-- datum -->
+    <div id="datum-container">
+        <!-- inject:views/tickets/datum.html -->
+        <div id="datum-content">
+    <h1>Datum</h1>
+</div>
+        <!-- endinject -->
+    </div>
+
+
+    <!-- sitzplatz -->
+    <div id="sitzplatz-container">
+        <!-- inject:views/tickets/sitzplatz.html -->
+        <div id="sitzplatz-content">
+    <h1>Sitzplatz</h1>
+</div>
+        <!-- endinject -->
+    </div>
+
+
+    <!-- adresse -->
+    <div id="adresse-container">
+        <!-- inject:views/tickets/adresse.html -->
+        <div id="adresse-content">
+    <h1>Adresse</h1>
+</div>
+        <!-- endinject -->
+    </div>
+
+
+    <!-- zusammenfassung -->
+    <div id="zusammenfassung-container">
+        <!-- inject:views/tickets/zusammenfassung.html -->
+        <div id="zusammenfassung-content">
+    <h1>Zusammenfassung</h1>
+</div>
+        <!-- endinject -->
+    </div>
+
     <div id="login-container">
         <!-- inject:views/login.html -->
         <div id="timeway-content">
@@ -1426,9 +1483,7 @@
 
     <div id="panel-blank-container">
         <!-- inject-panel:panels/panel_blank.html -->
-        
-<!-- Nicer Panel -->
-<link rel="stylesheet" href="../../sass/partials/views/_plan-flex.scss">
+        <!-- Nicer Panel -->
 <div id="nicer-panel-blank"
      class="nicer-panel"
      style="display: none"
@@ -1444,7 +1499,7 @@
         </div>
 
         <!-- Close -->
-        <div class="nicer-panel-close-button">
+        <div class="nicer-panel-button-close">
             <span class="picto-panel picto-close"></span>
         </div>
 
@@ -1466,7 +1521,7 @@
                 </div>
 
                 <!-- Options -->
-                <div class="nicer-panel-option-button">
+                <div class="nicer-panel-button-option">
                     <span class="picto-panel picto-options"></span>
                 </div>
 
@@ -1510,7 +1565,7 @@
                 </div>
 
                 <!-- options -->
-                <div class="nicer-panel-option-button">
+                <div class="nicer-panel-button-option">
                     <span class="picto-panel picto-options"></span>
                 </div>
             </div>
@@ -1554,7 +1609,7 @@
                 </div>
 
                 <!-- options -->
-                <div class="nicer-panel-option-button">
+                <div class="nicer-panel-button-option">
                     <span class="picto-panel picto-options"></span>
                 </div>
 
@@ -1623,10 +1678,107 @@
         <!-- endinject -->
     </div>
 
+    <div id="panel-tas-container">
+        <!-- inject-panel:panels/panel_tas.html -->
+        
+<!-- Nicer Panel Take a Seat-->
+<div id="nicer-panel-tas"
+     class="nicer-panel"
+     style="display: none"
+     data-keystroke="p"
+     data-nicer-panel="blank">
+
+    <!-- Panel Header -->
+    <div class="nicer-panel-header">
+        <!-- Title -->
+        <div class="nicer-panel-title">
+            <span class="glyphicon glyphicon-asterisk"></span>
+            Untitled
+        </div>
+
+        <!-- Close -->
+        <div class="nicer-panel-button-close">
+            <span class="picto-panel picto-close"></span>
+        </div>
+
+    </div>
+    <!-- Main -->
+    <div class="nicer-panel-main">
+
+
+        <!-- Panel Section -->
+        <section class="nicer-panel-section" data-panel-section="blank-section-1">
+
+            <!-- Panel Section Header -->
+            <div class="nicer-panel-section-header">
+
+                <!-- Title -->
+                <div class="nicer-panel-section-title">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    Section-1
+                </div>
+
+                <!-- Options -->
+                <div class="nicer-panel-button-option">
+                    <span class="picto-panel picto-options"></span>
+                </div>
+
+            </div>
+
+            <!-- Panel Section Main -->
+            <div class="nicer-panel-section-main">
+                <ul>
+                    <li>
+                        <p>listeneintrag</p>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Panel Section Footer -->
+            <div class="nicer-panel-section-footer"></div>
+        </section>
+
+
+        <!-- Panel Section -->
+        <section class="nicer-panel-section" data-panel-section="blank-section-2">
+            <!-- Panel Section Header -->
+
+            <!-- Title -->
+            <div class="nicer-panel-section-header">
+                <div class="nicer-panel-section-title">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    Section-2
+                </div>
+
+                <!-- options -->
+                <div class="nicer-panel-button-option">
+                    <span class="picto-panel picto-options"></span>
+                </div>
+            </div>
+
+            <!-- Panel Section Main -->
+            <div class="nicer-panel-section-main">
+
+
+            </div>
+            <!-- Panel Section Footer -->
+            <div class="nicer-panel-section-footer"></div>
+        </section>
+
+
+    </div>
+    <!-- Panel Section Footer -->
+    <div class="nicer-panel-section-footer"></div>
+</div>
+        <!-- endinject -->
+    </div>
+
 
 
 </div>
 
+<div class="nicer-panel-tas-button-toggle">tas Panel</div>
 
 
 <div id="blackout"></div>
@@ -1637,8 +1789,6 @@
 <script src="libraries/jquery/jquery-3.2.1.min.js"></script>
 <script src="libraries/bootstrap/bootstrap.min.js"></script>
 <script src="libraries/jquery/jquery-ui/jquery-ui.min.js"></script>
-<script src="libraries/pouchdb/pouchdb-6.2.0.min.js"></script>
-<script src="libraries/jquery/jquery.scrollTo.min.js"></script>
 <script src="libraries/keymaster/keymaster.js"></script>
 
 <!-- inject:js -->
@@ -1651,7 +1801,6 @@
 <script src="js/controllers/PanelController.js"></script>
 <script src="js/controllers/SeatSelectController.js"></script>
 <script src="js/editor/TasEditor.js"></script>
-<script src="js/editor/editor.js"></script>
 <script src="js/services/PouchDBService.js"></script>
 <!-- endinject -->
 

@@ -123,6 +123,16 @@ gulp.task('copy-data', function (cb) {
 });
 
 
+// Copy libraries
+var libraries_watch = './src/libraries/**/*';
+var libraries_src = './src/libraries/**/*.{css,js,eot,svg,png,jpg,tff,woff,woff2,map}';
+var libraries_dest = 'web/libraries';
+
+gulp.task('copy-libraries', function (cb) {
+	copy(libraries_src, libraries_dest, cb);
+});
+
+
 
 // Watch task
 gulp.task('default', function () {
@@ -131,5 +141,6 @@ gulp.task('default', function () {
 	gulp.watch(html_watch, ['html-inject']);
 	gulp.watch(images_watch, ['copy-images']);
 	gulp.watch(data_watch, ['copy-data']);
+	gulp.watch(libraries_watch, ['copy-data']);
 
 });
