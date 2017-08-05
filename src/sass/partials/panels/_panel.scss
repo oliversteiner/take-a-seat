@@ -98,9 +98,9 @@ $size-panel-from-left: 85px;
   border-bottom: none;
 }
 
-.nicer-panel-close-button,
-.nicer-panel-option-button,
-.nicer-panel-tab-option-button {
+.nicer-panel-button-close,
+.nicer-panel-button-option,
+.nicer-panel-tab-button-option {
   position: relative;
   display: inline-block;
   float: right;
@@ -134,9 +134,7 @@ $size-panel-from-left: 85px;
 
 }
 
-.nicer-panel-option-button {
 
-}
 
 .nicer-panel-section-main {
   padding: 10px;

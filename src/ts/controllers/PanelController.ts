@@ -1,8 +1,23 @@
+/**
+ *  Nicer Panel Controller
+ *  v 1.0.1
+ *
+ *  History:
+ *
+ *  v 1.0.1
+ *  - ""toggle-button" gewechselt zu "button-toggle"
+ */
+
+
 interface Panel {
     show(): void;
+
     hide(): void;
+
     toggle(): void;
+
 }
+
 
 class Panel {
 
@@ -10,6 +25,7 @@ class Panel {
     private $panel: any;  // jQuery
 
     constructor(name: string) {
+        console.log('PanelController: ' + name);
 
         this.name = name;
         const panel = '#nicer-panel-' + this.name;
@@ -27,6 +43,8 @@ class Panel {
     toggle() {
         this.$panel.toggle();
     }
+
+
 }
 
 
@@ -82,14 +100,13 @@ class PanelController {
 
     activate(panel_id: string, panel_Key?: string) {
 
-
         let $panel = $('#' + panel_id);
         let panel_name = panel_id.replace('-content', '');
         $panel.hide();
 
 
         // Close
-        let closeButton = '#' + panel_id + ' .-close-button';
+        let closeButton = '.' + panel_id + ' .-button-close';
         let $closeButton = $(closeButton);
 
         // -- add EventListener
@@ -98,8 +115,8 @@ class PanelController {
         });
 
 
-        // Toggle Close
-        let toggleButton = '.' + panel_id + '-toggle-button';
+        // Toggle toggle
+        let toggleButton = '.' + panel_id + '-button-toggle';
         let $toggleButton = $(toggleButton);
 
         // -- add EventListener
@@ -124,10 +141,6 @@ class PanelController {
         });
 
 
-
-
-
-
         // section
         // --------------------------------------
         let section_header = '#' + panel_id + ' .nicer-panel-section-header';
@@ -145,9 +158,8 @@ class PanelController {
 
         // options
         // --------------------------------------
-        let options_button = '#' + panel_id + ' .nicer-panel-option-button';
+        let options_button = '#' + panel_id + ' .nicer-panel-button-options';
         let $options_button = $(options_button);
-
 
 
         // -- add EventListener
@@ -162,17 +174,14 @@ class PanelController {
         });
 
 
-
-
         // close
         // -- add EventListener
-        $('.nicer-panel-close-button').click(function () {
+        $('.nicer-panel-button-close').click(function () {
 
             let $close_button = $(this).parent().parent();
             console.log($close_button);
             $close_button.hide();
         });
-
 
 
         // Draggable
@@ -193,7 +202,7 @@ class PanelController {
         if ($flipConteiner) {
 
             // content
-            let flipButton = '#' + panel_id + ' .flip-toggle-button';
+            let flipButton = '#' + panel_id + ' .flip-button-toggle';
             let $flipButton = $(flipButton);
 
             // -- add EventListener
