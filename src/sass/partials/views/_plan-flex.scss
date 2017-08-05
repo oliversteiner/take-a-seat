@@ -1,9 +1,12 @@
 $color-aufbauten: #d2d2d2;
+$color-aufbauten-miniplan: #B8E986;
 $color-aufbauten-beschriftung: gray;
 
 $color-sitz-border: white;
 $color-sitz-border-hover: #a10090;
-$color-miniplan-sitze : #737373;
+$color-sitz-ausgewaehlt: red;
+
+$color-miniplan-sitze: #737373;
 
 .bereich {
   position: relative;
@@ -113,15 +116,18 @@ $color-miniplan-sitze : #737373;
   overflow: hidden;
 }
 
-#buehne {
+.aufbauten {
+  // Farbe
+  background-color: $color-aufbauten;
+
   // inhalt einmitten
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
 
-  // Farbe
-  background-color: $color-aufbauten;
+#buehne {
 
   // Grösse
   width: 500px;
@@ -130,14 +136,6 @@ $color-miniplan-sitze : #737373;
 }
 
 #orchestergraben {
-  // inhalt einmitten
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-
-  // Farbe
-  background-color: $color-aufbauten;
 
   // Grösse
   width: 250px;
@@ -203,8 +201,7 @@ $color-miniplan-sitze : #737373;
   width: 100vw;
 }
 
-
-.abschnitt-name{
+.abschnitt-name {
   position: absolute;
   flex: inherit;
   z-index: 2;
@@ -328,7 +325,7 @@ $color-miniplan-sitze : #737373;
     opacity: 0.5;
   }
 
-  .abschnitt:hover{
+  .abschnitt:hover {
     opacity: 1;
   }
 
@@ -427,8 +424,6 @@ $color-miniplan-sitze : #737373;
     position: relative;
     opacity: 1;
 
-
-
   }
 
   .sitz {
@@ -440,24 +435,25 @@ $color-miniplan-sitze : #737373;
 
 }
 
-
 // uebersicht --------------------
 
-
 #plan-content.uebersicht-modus {
+
+  .aufbauten {
+    background-color: $color-aufbauten-miniplan;
+  }
 
   .abschnitt {
     position: relative;
     pointer-events: all;
     cursor: pointer;
     background-color: transparent;
-    opacity: 0.5;
+    opacity: 0.3;
   }
 
-  .abschnitt:hover{
+  .abschnitt:hover {
     opacity: 1;
   }
-
 
   .bereich.vorne,
   .bereich.mitte,
@@ -465,19 +461,42 @@ $color-miniplan-sitze : #737373;
     margin-top: 5px;
   }
 
+  .abgewinkelt {
+    background-color: $color-miniplan-sitze;
+
+  }
+
+  .abgewinkelt .sitz {
+    visibility: hidden;
+
+  }
+
+  .abgewinkelt .reihe .sitz {
+    top: 0;
+  }
+
+  .links.abgewinkelt,
+  .rechts.abgewinkelt
+  {
+    top: -5px;
+  }
+
+
   .reihe {
 
   }
 
   .sitz {
-    width: 2px;
-    height: 2px;
+    width: 4px;
+    height: 4px;
     border-radius: 0;
     margin: 0;
     pointer-events: none;
+
+
   }
 
-  .abschnitt-name{
+  .abschnitt-name {
     display: none;
   }
 
@@ -486,33 +505,36 @@ $color-miniplan-sitze : #737373;
   }
 
   #buehne {
-    width: 50px;
-    height: 10px;
-  }
-
-  #orchestergraben {
-    padding-top: 7px;
-    width: 40px;
+    width: 77px;
     height: 6px;
   }
 
+  #orchestergraben {
+    width: 39px;
+    height: 9px;
+
+    // Abstand zur Bestuhlung
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
   .beschriftung {
-  display: none;
+    display: none;
   }
 
   .bereich.vorne,
   .bereich.mitte,
   .bereich.balkon {
-    margin-top: 5px;
+    margin-top: 2px;
 
   }
 
   .mitte-abschnitt-links {
-    padding-left: 5px;
+    padding-left: 2px;
   }
 
   .mitte-abschnitt-rechts {
-    padding-right: 5px;
+    padding-right: 2px;
   }
 
   // Farben:
@@ -525,6 +547,13 @@ $color-miniplan-sitze : #737373;
   .p-70,
   .p-75 {
     background-color: $color-miniplan-sitze;
+  }
+  .versteckt {
+    background-color: transparent;
+  }
+
+  .ausgewaehlt {
+    background-color: $color-sitz-ausgewaehlt;
   }
 
 }

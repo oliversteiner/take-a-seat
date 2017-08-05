@@ -78,7 +78,7 @@
     <div id="bestuhlungs-layout">
         <!-- Bühne -->
         <div class="bereich buehne">
-            <div id="buehne">
+            <div id="buehne" class="aufbauten">
                 <div class="beschriftung">Bühne</div>
             </div>
         </div>
@@ -119,7 +119,7 @@
             </div>
 
             <!-- orchestergraben -->
-            <div id="orchestergraben">
+            <div id="orchestergraben" class="aufbauten">
                 <div class="beschriftung">Orchester</div>
             </div>
 
@@ -387,7 +387,7 @@
                 <div class="reihe">
                     <div class="sitz p-55"></div>
                     <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55 ausgewaehlt"></div>
 
                     <div class="sitz p-55"></div>
                     <div class="sitz p-55"></div>
@@ -1428,6 +1428,7 @@
         <!-- inject-panel:panels/panel_blank.html -->
         
 <!-- Nicer Panel -->
+<link rel="stylesheet" href="../../sass/partials/views/_plan-flex.scss">
 <div id="nicer-panel-blank"
      class="nicer-panel"
      style="display: none"
