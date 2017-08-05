@@ -1,25 +1,51 @@
 class TasEditor {
-  //  private editorDevicesController: EditorDevicesController;
+    //  private editorDevicesController: EditorDevicesController;
 
 
     constructor() {
         console.log('TasEditor');
 
-        // load
-    //    this.editorDevicesController = new EditorDevicesController();
+    }
 
+
+    test() {
+        console.log('TasEditor:test');
+
+        return false;
     }
 
     start() {
-     //   EditorSlidesController.open();
+        console.log('TasEditor:start');
+
+        this.addEventListeners();
+        return false;
     }
 
 
     addEventListeners() {
+        console.log('TasEditor: addEventListeners');
 
-        // toggle
+        const scope = this;
 
+        // activateEditor
+        $('.editor-button-toggle').click(
+            scope.activateEditor
+        );
+
+        return false;
     }
+
+    /**
+     * activateEditor
+     *
+     */
+    activateEditor() {
+        console.log('Editor aktiviert');
+        // editor modus einschalten
+        $('#editor').toggle();
+        $('body').toggleClass('editor-active');
+    }
+
 }
 
 

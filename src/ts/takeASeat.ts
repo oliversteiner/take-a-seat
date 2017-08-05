@@ -19,12 +19,6 @@ class TakeASeat {
     // Options
     public check_for_mobile: boolean = true;
 
-    // Controllers
-    public consoleController: ConsoleController;
-
-
-    // DB
-    private db: any;
 
 
     /**
@@ -41,11 +35,6 @@ class TakeASeat {
             this.check_for_mobile = false;
         }
 
-
-        // DB
-        this.db = new PouchDB('takeaseat');
-
-
         // Init
         this.setVersion();
         this.addKeystrokes();
@@ -58,18 +47,20 @@ class TakeASeat {
         this.addEventListeners();
     }
 
+    /**
+     *  update
+     *
+     */
     update() {
 
     }
 
 
     /**
-     *
+     * loadComponents
      *
      */
     loadComponents() {
-
-        this.consoleController = new ConsoleController();
 
     }
 
@@ -81,47 +72,57 @@ class TakeASeat {
     addEventListeners() {
 
         //
-        $('.navigation-button-next').click(takeASeat.goToNext);
 
     }
 
     /**
      * addKeystrokes
+     *
      */
     addKeystrokes() {
-
-        // Pfeil nach Links
-        key('left', function () {
-            takeASeat.goToPrevious();
-        });
 
 
     }
 
 
-
-
-// Version
+    /**
+     * setVersion
+     *
+     * @returns {string}
+     */
     setVersion() {
         $('.version').text(this.version);
         return this.version;
     }
 
-// Modal
-    static openModalCenter() {
+
+    /**
+     * openModal
+     *
+     */
+    static openModal() {
 
         // Modal öffnen
         $('#modal-center').modal('show');
     }
 
-    static closeModalCenter() {
 
-        // Modal öffnen
+    /**
+     * closeModal
+     *
+     */
+    static closeModal() {
+
+        // Modal schliessen
         $('#modal-center').modal('hide');
-
     }
 
 
+    /**
+     * detectMobile
+     *
+     * @returns {boolean}
+     */
     detectMobile() {
         if (this.check_for_mobile === true) {
 
@@ -135,43 +136,8 @@ class TakeASeat {
                     // speichern
                     takeASeat.isMobile = true;
 
-                    // Anzeige starten, ob zu Remote-Seite wechseln
-                    takeASeat.openModalCenter();
-                    $('#remote-modal-change-directly').show();
-                    $('#modal-center').modal('show').on('shown.bs.modal', function () {
-
-
-                        // Timer ablaufen lassen
-
-                        let countdown = [3, 2, 1, 0];
-
-                        const speed = 1000;
-                        let timer = setInterval(lineAfterLine, speed);
-                        let length = countdown.length;
-                        let index = 0;
-
-                        function lineAfterLine() {
-                            let counter = countdown[index];
-
-                            $('.go-remote-contdown-number').text(counter);
-
-                            index++;
-
-                            // remove timer after interating through all articles
-                            if (index >= length) {
-                                clearInterval(timer);
-                                let pikto = '<span class="glyphicon glyphicon-sort "></span>';
-                                $('.go-remote-contdown-number').html(pikto);
-
-                                // Modal nach 4 sekunden beenden
-                                $('#modal-center').modal('hide');
-
-                            }
-                        }
-
-                    })
-
                 }  // isMobile
+
             }); // ready
 
             return true;

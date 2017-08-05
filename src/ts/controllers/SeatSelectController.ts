@@ -10,6 +10,11 @@ class SeatSelectController {
     start() {
         this.addEventListeners();
 
+
+        sitzeVierschieben('links');
+        sitzeVierschieben('rechts');
+
+
         }
 
 
@@ -35,10 +40,6 @@ class SeatSelectController {
         $clone.appendTo('#solo-dock');
 
         console.log(elem);
-
-
-
-
 
 
     }
