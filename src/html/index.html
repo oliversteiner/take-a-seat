@@ -6,9 +6,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
-    <title>Please Take a Seat</title>
 
     <link rel="stylesheet" href="libraries/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libraries/bootstrap/bootstrap-theme.min.css">
+
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/images/icon/apple-icon-57x57.png">
@@ -30,9 +31,12 @@
     <!-- Google Font Muli-->
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
+    <title>Take a Seat</title>
+
+
 </head>
 <body class="">
-<nav class="navbar navbar-default navbar-nicer" id="main_navigation">
+<nav class="navbar navbar-default" id="main_navigation">
     <!-- inject:views/main_navigation.html -->
     <!-- endinject -->
 </nav>
@@ -42,7 +46,43 @@
 <main>
 
     <div id="plan-container">
-        <!-- inject:views/plan.html -->
+        <!-- inject:views/tickets/plan.html -->
+        <!-- endinject -->
+    </div>
+
+
+
+    <!-- start -->
+    <div id="start-container">
+        <!-- inject:views/tickets/start.html -->
+        <!-- endinject -->
+    </div>
+
+
+    <!-- datum -->
+    <div id="datum-container">
+        <!-- inject:views/tickets/datum.html -->
+        <!-- endinject -->
+    </div>
+
+
+    <!-- sitzplatz -->
+    <div id="sitzplatz-container">
+        <!-- inject:views/tickets/sitzplatz.html -->
+        <!-- endinject -->
+    </div>
+
+
+    <!-- adresse -->
+    <div id="adresse-container">
+        <!-- inject:views/tickets/adresse.html -->
+        <!-- endinject -->
+    </div>
+
+
+    <!-- zusammenfassung -->
+    <div id="zusammenfassung-container">
+        <!-- inject:views/tickets/zusammenfassung.html -->
         <!-- endinject -->
     </div>
 
@@ -90,10 +130,16 @@
         <!-- endinject -->
     </div>
 
+    <div id="panel-tas-container">
+        <!-- inject-panel:panels/panel_tas.html -->
+        <!-- endinject -->
+    </div>
+
 
 
 </div>
 
+<div class="nicer-panel-tas-button-toggle">tas Panel</div>
 
 
 <div id="blackout"></div>
@@ -104,8 +150,6 @@
 <script src="libraries/jquery/jquery-3.2.1.min.js"></script>
 <script src="libraries/bootstrap/bootstrap.min.js"></script>
 <script src="libraries/jquery/jquery-ui/jquery-ui.min.js"></script>
-<script src="libraries/pouchdb/pouchdb-6.2.0.min.js"></script>
-<script src="libraries/jquery/jquery.scrollTo.min.js"></script>
 <script src="libraries/keymaster/keymaster.js"></script>
 
 <!-- inject:js -->

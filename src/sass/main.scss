@@ -14,7 +14,20 @@
 @import 'partials/views/footer';
 @import "partials/views/help";
 @import "partials/views/modal_center";
-@import "partials/views/plan-flex";
+@import "partials/views/tickets/plan";
+
+
+// Tickets
+@import "partials/views/tickets/tickets";
+
+@import "partials/views/tickets/plan";
+@import "partials/views/tickets/start";
+@import "partials/views/tickets/datum";
+@import "partials/views/tickets/sitzplatz";
+@import "partials/views/tickets/adresse";
+@import "partials/views/tickets/zusammenfassung";
+
+
 
 // Editor
 @import "editor/design/_colors.scss";
@@ -55,23 +68,18 @@ body{
 // -----------------------------
 
 .navbar-nicer {
-  background-color: $color-background;;
 }
 
 .navbar-nicer:hover .navbar-nav > li > a {
-  color: $color-nav-text;
 }
 
 .navbar-nicer:hover .navbar-nav > li > a:hover {
-  color: $color-text-link-hover
 }
 
 .navbar-nicer:hover .navbar-nav > li > a:active {
-  color: $color-text-link-active
 }
 
 .navbar-nicer .navbar-nav > li > a {
-  color: $color-background;
 
 }
 
