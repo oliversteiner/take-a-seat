@@ -19,4 +19,7 @@ $(function () {
     // seatSelectController
     seatSelectController = new SeatSelectController();
     seatSelectController.start();
+    // den Sitzplan an die richtige Stelle verschieben
+    var $target = $('#plan-container');
+    $('#plan-content').appendTo($target);
 });

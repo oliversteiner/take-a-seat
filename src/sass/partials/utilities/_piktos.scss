@@ -1,3 +1,4 @@
+
 // Block ---------------------------------
 
 .tas-pikto {
@@ -19,8 +20,10 @@
   background: no-repeat top left;
   background-size: cover;
 
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  margin-right: 3px;
 
 }
 
@@ -37,3 +40,4 @@
 .tas-pikto-address {
   background-image: url("../images/tickets/piktos/mail.svg");
 }
+

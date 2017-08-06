@@ -8,6 +8,14 @@ $color-sitz-ausgewaehlt: red;
 
 $color-miniplan-sitze: #737373;
 
+#plan-content {
+  color: black;
+}
+
+#bestuhlungs-layout {
+
+}
+
 .bereich {
   position: relative;
   display: flex;
@@ -190,16 +198,7 @@ $color-miniplan-sitze: #737373;
   top: 25px;
 }
 
-#plan-content {
-  background-color: #fffbfd;
-  color: black;
-  width: 100vw;
-}
 
-#bestuhlungs-layout {
-  position: relative;
-  width: 100vw;
-}
 
 .abschnitt-name {
   position: absolute;
@@ -476,11 +475,9 @@ $color-miniplan-sitze: #737373;
   }
 
   .links.abgewinkelt,
-  .rechts.abgewinkelt
-  {
+  .rechts.abgewinkelt {
     top: -5px;
   }
-
 
   .reihe {
 
@@ -492,7 +489,6 @@ $color-miniplan-sitze: #737373;
     border-radius: 0;
     margin: 0;
     pointer-events: none;
-
 
   }
 

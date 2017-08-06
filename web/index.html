@@ -104,7 +104,7 @@
 
         <!-- Text Anleitung -->
         <div class="block-anleitung">
-            <h2>hier können Sie schnell und <br> einfach Tickets bestellen</h2>
+            <p>hier können Sie schnell und <br> einfach Tickets bestellen</p>
         </div>
 
 
@@ -162,6 +162,19 @@
             </div>
         </div>
 
+        <h3>Allgemeine Informationen</h3>
+        <ul class="allgemeine-informationen">
+            <li>Garderobe und Operettenmagazin sind gratis!</li>
+            <li>Keine Bearbeitungsgebühren.</li>
+            <li>Telefonischer Vorverkauf ist möglich jeweils <br>
+                Mo / Mi / Fr, von 14.00 bis 16.00 auf <br>
+                <strong>062 893 27 38</strong></li>
+            <li>Oder persönlich im Vorverkaufsbüro im UG des Gemeindesaals Möriken zu gleichen Zeiten</li>
+            <li><strong>Möchten Sie vor oder nach der Aufführung etwas essen?</strong> Unser Vorverkaufsteam berät Sie
+                gerne und
+                hilft auch bei der Platzreservation in einem Restaurant in der Nähe.
+            </li>
+        </ul>
     </article>
 
 
@@ -211,7 +224,7 @@
 
         <!-- Text Anleitung -->
         <div class="block-anleitung">
-            <h2>wählen Sie ein Aufführungsdatum</h2>
+            <p>wählen Sie ein Aufführungsdatum</p>
         </div>
 
 
@@ -481,17 +494,137 @@
     </div>
 
 
-    <!-- sitzplatz -->
-    <div id="sitzplatz-container">
-        <!-- inject:views/tickets/sitzplatz.html -->
-        <div id="sitzplatz-content">
-    <h1>Sitzplatz</h1>
+    <!-- sitzplan -->
+    <div id="sitzplan-container">
+        <!-- inject:views/tickets/sitzplan.html -->
+        <section class="section-ticket" id="vorlage-content">
+
+    <!-- Debug -->
+    <div class="debug-page-name">Sitzplan</div>
+
+
+    <!-- Kopf-Teil -->
+    <header>
+
+        <nav class="block-navigation">
+            <!-- button zurück -->
+            <button class="btn btn-tas-zurueck">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                zurück
+            </button>
+
+        </nav>
+
+
+        <!--Text Titel -->
+        <div class="block-titel">
+            <h1><span class="tas-pikto-title tas-pikto-seat"></span>Sitzplan</h1>
+        </div>
+
+        <!-- Text Anleitung -->
+        <div class="block-anleitung">
+            <p>Tippen Sie auf den gewünschten Bereich</p>
+        </div>
+
+
+    </header>
+
+
+    <!-- Inhalt-Teil -->
+    <div id="plan-container"></div>
+
+
+    <article>
+
+
+        <h3> Preiskategorien</h3>
+        <table class="preiskategorien">
+            <tbody>
+            <tr>
+                <th colspan="2">Orchesterplätze</th>
+                <td>30.–</td>
+            </tr>
+            <tr>
+                <td class="unterbrecher" colspan="3">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <th class="kategorie">Parkett I</th>
+                <td class="reihen">Reihe 1-3</td>
+                <td class="preis">55.–</td>
+            </tr>
+            <tr>
+                <th>Parkett II</th>
+                <td>Reihe 4-7</td>
+                <td>50.–</td>
+            </tr>
+            <tr>
+                <th class="kategorie">Parkett III <span class="klein">(Seite)</span></th>
+                <td>Reihe 1-9</td>
+                <td>60.- / 40.–</td>
+            </tr>
+            <tr>
+                <td class="unterbrecher" colspan="3">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <th>Estrade I</th>
+                <td>Reihe 8 / 10</td>
+                <td>60.–</td>
+            </tr>
+            <tr>
+                <th>Estrade II</th>
+                <td>Reihe 9 / 11</td>
+                <td>55.–</td>
+            </tr>
+            <tr>
+                <th class="kategorie">Estrade III <span class="klein">(Seite)</span></th>
+                <td>Reihe 10 / 11</td>
+                <td>60.– / 55.-</td>
+            </tr>
+            <tr>
+                <td class="unterbrecher" colspan="3">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <th>Balkon I</th>
+                <td>Reihe 1-5</td>
+                <td>75.–</td>
+            </tr>
+            <tr>
+                <th>Balkon II</th>
+                <td>Reihe 6-8</td>
+                <td>70.–</td>
+            </tr>
+            <tr>
+                <td class="unterbrecher" colspan="3">
+                    <hr>
+                </td>
+            </tr>
+            </tbody>
+        </table>
 
 
 
 
+    </article>
 
-</div>
+
+    <!-- Fuss-Teil -->
+    <footer>
+
+        <!-- Button "weiter zu" -->
+        <button class="btn btn-block btn-lg btn-tas-weiter ">
+            weiter zu
+        </button>
+
+    </footer>
+
+
+</section>
         <!-- endinject -->
     </div>
 
@@ -499,9 +632,202 @@
     <!-- adresse -->
     <div id="adresse-container">
         <!-- inject:views/tickets/adresse.html -->
-        <div id="adresse-content">
-    <h1>Adresse</h1>
-</div>
+        <section class="section-ticket" id="adresse-content">
+
+    <!-- Debug -->
+    <div class="debug-page-name">Adresse</div>
+
+
+    <!-- Kopf-Teil -->
+    <header>
+
+        <nav class="block-navigation">
+            <!-- button zurück -->
+            <button class="btn btn-tas-zurueck">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                zurück
+            </button>
+
+        </nav>
+
+
+        <!--Text Titel -->
+        <div class="block-titel">
+            <h1><span class="tas-pikto-title tas-pikto-address"></span>Adresse</h1>
+        </div>
+
+        <!-- Text Anleitung -->
+        <div class="block-anleitung">
+        </div>
+
+
+    </header>
+
+
+    <!-- Inhalt-Teil -->
+    <article>
+
+        <div class="adresse-container">
+
+            <div class="container-fluid">
+                <form>
+                    <fieldset>
+                        <!-- Address form -->
+
+                        <!-- first-name input-->
+                        <a name="address-anchor-first-name" ></a>
+                        <div class="form-group has-feedback">
+                            <label class="control-label" for="address-form-input-first-name">Vorname</label>
+                            <input id="address-form-input-first-name" name="first-name"
+                                   class="form-control">
+                        </div>
+
+
+                        <!-- last-name input-->
+                        <a name="address-anchor-last-name" ></a>
+
+                        <div class="form-group has-feedback">
+                            <label class="control-label" for="address-form-input-last-name">Nachname</label>
+                            <input id="address-form-input-last-name" name="last-name" type="text" class="form-control">
+                        </div>
+
+                        <!-- organisation input-->
+                        <a name="address-anchor-organisation" ></a>
+
+                        <div class="form-group has-feedback">
+                            <label class="control-label" for="address-form-input-organisation">Firma / Verein</label>
+                            <input id="address-form-input-organisation" name="organisation" type="text"
+                                   class="form-control">
+                        </div>
+
+                        <!-- address input-->
+                        <a name="address-anchor-address" ></a>
+
+                        <div class="form-group has-feedback">
+                            <label class="control-label" for="address-form-input-address">Adresse</label>
+                            <input id="address-form-input-address" name="address" type="text" class="form-control">
+                        </div>
+
+
+                        <!-- postal-code input-->
+                        <a name="address-anchor-zip" ></a>
+                        <a name="address-anchor-city" ></a>
+
+                        <div class="form-group has-feedback row">
+
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 address-form-plz">
+                                <label class="control-label" for="address-form-input-zip">PLZ</label>
+                                <input class="form-control" type="text" value="9000"
+                                       name="zip"
+                                       id="address-form-input-zip">
+                            </div>
+
+                            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 address-form-city">
+                                <label class="control-label" for="address-form-input-city">Ort</label>
+                                <input class="form-control" type="text" value="Artisanal kale"
+                                       name="city"
+                                       id="address-form-input-city">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- telephone input-->
+                        <a name="address-anchor-telephone" ></a>
+
+                        <div class="form-group has-feedback">
+                            <label class="control-label" for="address-form-input-telephone">Telefon</label>
+                            <input id="address-form-input-telephone" name="telephone" type="tel" class="form-control">
+                        </div>
+
+                        <!-- email input-->
+                        <a name="address-anchor-email" ></a>
+
+                        <div class="form-group has-feedback">
+                            <label class="control-label" for="address-form-input-email">E-Mail</label>
+                            <input id="address-form-input-email" name="email" type="email" class="form-control">
+                        </div>
+
+                    </fieldset>
+
+                    <hr>
+
+                    <fieldset>
+
+                        <!-- Checkbox Rechnung-->
+                        <div class="control-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" checked name="rechnung-pdf"> Rechnung via E-Mail
+                                </label>
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" checked name="rechnung-post"> Rechnung per Post schicken
+                                </label>
+                            </div>
+
+                            <hr>
+
+                            <!-- Checkbox AGB-->
+                            <a name="address-anchor-agb" ></a>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Ich akzeptiere die <a href="agb" target="_blank">AGB <span
+                                        class="glyphicon glyphicon-link"></span></a>
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </fieldset>
+
+                    <hr>
+
+                    <div class="form-requrements">
+
+                        <p>Diese Felder müssen ausgefüllt werden:</p>
+                        <ul>
+                            <li><a href="#address-anchor-first-name">Vorname</a></li>
+                            <li><a href="#address-anchor-last-name">Nachname</a></li>
+                            <li><a href="#address-anchor-address">Adresse</a></li>
+                            <li><a href="#address-anchor-zip">PLZ</a></li>
+                            <li><a href="#address-anchor-city">Ort</a></li>
+                            <li><a href="#address-anchor-telephone">Telefon</a></li>
+                            <li><a href="#address-anchor-email">E-Mail</a></li>
+                            <li><a href="#address-anchor-agb">AGB</a></li>
+
+
+                        </ul>
+                    </div>
+
+
+                </form>
+
+
+
+
+            </div>
+
+
+        </div>
+
+    </article>
+
+
+    <!-- Fuss-Teil -->
+    <footer>
+
+        <!-- Button "weiter zu" -->
+        <button class="btn btn-block btn-lg btn-tas-weiter ">
+            weiter zu
+        </button>
+
+    </footer>
+
+
+</section>
         <!-- endinject -->
     </div>
 
@@ -509,11 +835,231 @@
     <!-- zusammenfassung -->
     <div id="zusammenfassung-container">
         <!-- inject:views/tickets/zusammenfassung.html -->
-        <div id="zusammenfassung-content">
-    <h1>Zusammenfassung</h1>
-</div>
+        <section class="section-ticket" id="zusammenfassung-content">
+
+    <!-- Debug -->
+    <div class="debug-page-name">zusammenfassung</div>
+
+
+    <!-- Kopf-Teil -->
+    <header>
+
+        <nav class="block-navigation">
+            <!-- button zurück -->
+            <button class="btn btn-tas-zurueck">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                zurück
+            </button>
+
+        </nav>
+
+
+        <!--Text Titel -->
+        <div class="block-titel">
+            <h1>Zusammenfassung</h1>
+        </div>
+
+
+    </header>
+
+
+    <!-- Inhalt-Teil -->
+    <article>
+
+        <h2>Aufführung</h2>
+
+        <div class="zsf-auffuehrung">
+
+            <div class="zsf-auffuehrung-anbieter">Operette Möriken / Wildegg</div>
+            <div class="zsf-auffuehrung-titel">Gräfin Mariza</div>
+            <div class="zsf-auffuehrung-datum">MIttwoch 25.Oktober</div>
+        </div>
+
+        <h2>Rechnung an</h2>
+
+        <h3>Adresse</h3>
+        <address>
+            <div>
+                <strong>
+                    <span class="zfs-first-name">Hans-Ruedi</span>
+                    <span class="zsf-last-name">Muster</span>
+                </strong>
+            </div>
+            <div class="zsf-organisation">Jagdverein «Ha Bock»</div>
+            <div class="zsf-address">Hauptstrasse 22</div>
+            <div>
+                <span class="zsf-zip">9002</span>
+                <span class="zsf-city">Flawellsbach</span>
+            </div>
+            <hr>
+            <div class="zsf-telephone">062 656 12 12</div>
+            <div class="zsf-email">hans-muster@bluewin.ch</div>
+        </address>
+
+        <h3>Lieferung und Rechnung</h3>
+        <div>
+            <ul>
+                <li>Ticketlieferung per Post</li>
+                <li>Rechnung via E-mail</li>
+                <li>Rechnung per Post</li>
+            </ul>
+        </div>
+
+
+    </article>
+
+    <article>
+        <h2>Ticketübersicht</h2>
+
+        <h3 class="sitz-liste-abschnitt">Balkon links</h3>
+
+        <ul class="list-group list-group-sitze">
+            <li class="list-group-item">
+
+                <span class="sitz-liste-reihe"><span class="sitz-liste-klein">Reihe</span>3</span>
+
+                <span class="sitz-liste-nummer"><span class="sitz-liste-klein">Nr.</span>123</span>
+
+                <span class="sitz-liste-preis">70.-</span>
+
+                <span class="sitz-liste-gutschein">
+                       <span class="tas-radio tas-radio-active"> <span class="tas-radio-outer"> <span
+                               class="tas-radio-inner"></span></span></span> <span
+                        class="sitz-liste-klein">Gutschein</span>
+                </span>
+            </li>
+
+            <li class="list-group-item">
+
+                <span class="sitz-liste-reihe"><span class="sitz-liste-klein">Reihe</span>3</span>
+
+                <span class="sitz-liste-nummer"><span class="sitz-liste-klein">Nr.</span>123</span>
+
+                <span class="sitz-liste-preis">70.-</span>
+
+                <span class="sitz-liste-gutschein">
+                       <span class="tas-radio"> <span class="tas-radio-outer"> <span
+                               class="tas-radio-inner"></span></span></span> <span
+                        class="sitz-liste-klein">Gutschein</span>
+                </span>
+
+            </li>
+            <li class="list-group-item">
+
+                <span class="sitz-liste-reihe"><span class="sitz-liste-klein">Reihe</span>3</span>
+
+                <span class="sitz-liste-nummer"><span class="sitz-liste-klein">Nr.</span>123</span>
+
+                <span class="sitz-liste-preis">70.-</span>
+
+                <span class="sitz-liste-gutschein">
+                       <span class="tas-radio"> <span class="tas-radio-outer"> <span
+                               class="tas-radio-inner"></span></span></span> <span
+                        class="sitz-liste-klein">Gutschein</span>
+                </span>
+            </li>
+
+        </ul>
+        <h3 class="sitz-liste-abschnitt">Estrade rechts</h3>
+
+        <ul class="list-group list-group-sitze">
+            <li class="list-group-item">
+
+                <span class="sitz-liste-reihe"><span class="sitz-liste-klein">Reihe</span>3</span>
+
+                <span class="sitz-liste-nummer"><span class="sitz-liste-klein">Nr.</span>123</span>
+
+                <span class="sitz-liste-preis">70.-</span>
+
+                <span class="sitz-liste-gutschein">
+                       <span class="tas-radio tas-radio-active"> <span class="tas-radio-outer"> <span
+                               class="tas-radio-inner"></span></span></span> <span
+                        class="sitz-liste-klein">Gutschein</span>
+                </span>
+            </li>
+
+            <li class="list-group-item">
+
+                <span class="sitz-liste-reihe"><span class="sitz-liste-klein">Reihe</span>3</span>
+
+                <span class="sitz-liste-nummer"><span class="sitz-liste-klein">Nr.</span>123</span>
+
+                <span class="sitz-liste-preis">70.-</span>
+
+                <span class="sitz-liste-gutschein">
+                       <span class="tas-radio"> <span class="tas-radio-outer"> <span
+                               class="tas-radio-inner"></span></span></span> <span
+                        class="sitz-liste-klein">Gutschein</span>
+                </span>
+
+            </li>
+            <li class="list-group-item">
+
+                <span class="sitz-liste-reihe"><span class="sitz-liste-klein">Reihe</span>3</span>
+
+                <span class="sitz-liste-nummer"><span class="sitz-liste-klein">Nr.</span>123</span>
+
+                <span class="sitz-liste-preis">70.-</span>
+
+                <span class="sitz-liste-gutschein">
+                       <span class="tas-radio"> <span class="tas-radio-outer"> <span
+                               class="tas-radio-inner"></span></span></span> <span
+                        class="sitz-liste-klein">Gutschein</span>
+                </span>
+            </li>
+
+        </ul>
+
+        <h3 class="sitz-liste-abschnitt">Rollstuhl rechts</h3>
+
+        <ul class="list-group list-group-sitze">
+            <li class="list-group-item">
+
+                <span class="sitz-liste-reihe"><span class="sitz-liste-klein">Reihe</span>1</span>
+
+                <span class="sitz-liste-nummer"><span class="sitz-liste-klein">Nr.</span>2</span>
+
+                <span class="sitz-liste-preis">0.-</span>
+
+                <span class="sitz-liste-gutschein">
+                       <span class="tas-radio tas-radio-active"> <span class="tas-radio-outer"> <span
+                               class="tas-radio-inner"></span></span></span> <span
+                        class="sitz-liste-klein">Gutschein</span>
+                </span>
+            </li>
+        </ul>
+
+        <div class="sitz-liste-total">
+
+            <span class="sitz-liste-total-sitze">
+                <label for="total-sitze">Tickets</label>
+            <span id="total-sitze">7</span>
+                </span>
+            <span class="sitz-liste-total-preis">
+                <label for="total-preis">TOTAL</label>
+            <span id="total-preis">375.-</span>
+                </span>
+
+        </div>
+
+    </article>
+
+
+    <!-- Fuss-Teil -->
+    <footer>
+
+        <!-- Button "weiter zu" -->
+        <button class="btn btn-block btn-lg btn-tas-buchen ">
+            buchen
+        </button>
+
+    </footer>
+
+
+</section>
         <!-- endinject -->
     </div>
+
 
     <div id="login-container">
         <!-- inject:views/login.html -->
@@ -570,7 +1116,7 @@
 
         <!-- Text Anleitung -->
         <div class="block-anleitung">
-            <h2>Hier beschreiben was gemacht werden muss</h2>
+            <p>Hier beschreiben was gemacht werden muss</p>
         </div>
 
 
@@ -626,11 +1172,1126 @@
         <!-- endinject -->
     </div>
 
-<!--
+
     <div id="plan-container">
-        &lt;!&ndash; inject:views/tickets/plan.html &ndash;&gt;
-        &lt;!&ndash; endinject &ndash;&gt;
-    </div>-->
+        <!-- inject:views/tickets/plan.html -->
+        <div id="plan-content">
+
+
+
+    <div id="bestuhlungs-layout">
+        <!-- Bühne -->
+        <div class="bereich buehne">
+            <div id="buehne" class="aufbauten">
+                <div class="beschriftung">Bühne</div>
+            </div>
+        </div>
+
+        <!-- Orchester -->
+        <div class="bereich orchester">
+
+            <!-- orchester-links-rollstuhl -->
+            <div id="orchester-links-rollstuhl" class="abschnitt links">
+                <div class="abschnitt-name">Rollstuhl links</div>
+
+                <div class="reihe">
+                    <div class="sitz rollstuhl"></div>
+                </div>
+            </div>
+
+            <!-- orchester-links -->
+            <div id="orchester-links" class="abschnitt">
+                <div class="abschnitt-name">Orchester links</div>
+
+                <!-- Reihe 1-->
+                <div class="reihe">
+                    <div class="sitz p-30"></div>
+                    <div class="sitz p-30"></div>
+                </div>
+
+                <!-- Reihe 2 -->
+                <div class="reihe">
+                    <div class="sitz p-30"></div>
+                    <div class="sitz p-30"></div>
+                </div>
+
+                <!-- Reihe 3 -->
+                <div class="reihe">
+                    <div class="sitz p-30"></div>
+                    <div class="sitz p-30"></div>
+                </div>
+            </div>
+
+            <!-- orchestergraben -->
+            <div id="orchestergraben" class="aufbauten">
+                <div class="beschriftung">Orchester</div>
+            </div>
+
+            <!-- orchester-rechts -->
+            <div id="orchester-rechts" class="abschnitt">
+
+                <!-- Beschriftung -->
+                <div class="abschnitt-name">Orchester rechts</div>
+
+                <!-- Reihe 1-->
+                <div class="reihe">
+                    <div class="sitz p-30"></div>
+                    <div class="sitz p-30"></div>
+                </div>
+
+                <!-- Reihe 2 -->
+                <div class="reihe">
+                    <div class="sitz p-30"></div>
+                    <div class="sitz p-30"></div>
+                </div>
+
+                <!-- Reihe 3 -->
+                <div class="reihe">
+                    <div class="sitz p-30"></div>
+                    <div class="sitz p-30"></div>
+                </div>
+            </div>
+
+            <!-- orchester-rechts-rollstuhl -->
+            <div id="orchester-rechts-rollstuhl" class="abschnitt rechts">
+                <div class="abschnitt-name">Rollstuhl rechts</div>
+
+                <!-- Reihe 1-->
+                <div class="reihe">
+                    <div class="sitz rollstuhl"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- vorne -->
+        <div class="bereich vorne">
+
+            <!--seitenestrade-links-->
+            <div class="abschnitt seitenestrade links abgewinkelt">
+                <div class="abschnitt-name">Seitenestrade links</div>
+
+                <!-- Reihe 1-->
+                <div class="reihe">
+                    <div class="sitz p-30"></div>
+                    <div class="sitz p-30"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 2 -->
+                <div class="reihe">
+                    <div class="sitz p-30"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 3 -->
+                <div class="reihe">
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 4 -->
+                <div class="reihe">
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 5 -->
+                <div class="reihe">
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 6 -->
+                <div class="reihe">
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 7 -->
+                <div class="reihe">
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                </div>
+
+            </div>
+
+            <!--parkett-links-->
+            <div class="abschnitt parkett links  mitte-abschnitt-links">
+                <div class="abschnitt-name">Parkett links</div>
+
+                <!-- Reihe 1 - 11 sitze-->
+                <div class="reihe">
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                </div>
+
+                <!-- Reihe 2 -->
+                <div class="reihe versetzt">
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                </div>
+
+                <!-- Reihe 3 -->
+                <div class="reihe">
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                </div>
+
+                <!-- Reihe 4 -->
+                <div class="reihe versetzt">
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                </div>
+
+                <!-- Reihe 5 -->
+                <div class="reihe">
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                </div>
+
+                <!-- Reihe 6 -->
+                <div class="reihe versetzt">
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                </div>
+
+                <!-- Reihe 7 -->
+                <div class="reihe">
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                </div>
+
+            </div>
+
+            <!--parkett-rechts-->
+            <div class="abschnitt parkett rechts  mitte-abschnitt-rechts">
+                <div class="abschnitt-name">Parkett rechts</div>
+
+                <!-- Reihe 1 - 10 sitze-->
+                <div class="reihe">
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55 ausgewaehlt"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                </div>
+
+                <!-- Reihe 2 -->
+                <div class="reihe versetzt">
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                </div>
+
+                <!-- Reihe 3 -->
+                <div class="reihe">
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                </div>
+
+                <!-- Reihe 4 -->
+                <div class="reihe versetzt">
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                </div>
+
+                <!-- Reihe 5 -->
+                <div class="reihe">
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                </div>
+
+                <!-- Reihe 6 -->
+                <div class="reihe versetzt">
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                </div>
+
+                <!-- Reihe 7 -->
+                <div class="reihe">
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50"></div>
+
+                    <div class="sitz p-50"></div>
+                </div>
+
+            </div>
+
+            <!--seitenestrade-rechts-->
+            <div class="seitenestrade rechts abschnitt abgewinkelt">
+
+                <!-- Beschriftung -->
+                <div class="abschnitt-name">Seitenestrade rechts</div>
+
+                <!-- Reihe 1-->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-30"></div>
+                    <div class="sitz p-30"></div>
+                </div>
+
+                <!-- Reihe 2 -->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-30"></div>
+                </div>
+
+                <!-- Reihe 3 -->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                </div>
+
+                <!-- Reihe 4 -->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                </div>
+
+                <!-- Reihe 5 -->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                </div>
+
+                <!-- Reihe 6 -->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                </div>
+
+                <!-- Reihe 7 -->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- mitte -->
+        <div class="bereich mitte">
+
+            <!--seitenestrade-links-->
+            <div class="seitenestrade links abschnitt">
+
+                <!-- Beschriftung -->
+                <div class="abschnitt-name">Seitenestrade links</div>
+
+                <!-- Reihe 1-->
+                <div class="reihe">
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 2 -->
+                <div class="reihe">
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 3 -->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz versteckt"></div>
+                    <div class="sitz versteckt"></div>
+                    <div class="sitz versteckt"></div>
+                </div>
+
+                <!-- Reihe 4 -->
+                <div class="reihe">
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz versteckt"></div>
+                    <div class="sitz versteckt"></div>
+                    <div class="sitz versteckt"></div>
+                </div>
+            </div>
+
+            <!--estrade-links-->
+            <div class="estrade links abschnitt  mitte-abschnitt-links">
+
+                <!-- Beschriftung -->
+                <div class="abschnitt-name">Estrade links</div>
+
+                <!-- Reihe 1 - 11 sitze-->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 2 -->
+                <div class="reihe versetzt">
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                </div>
+
+                <!-- Reihe 3 - 11 sitze-->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 4 -->
+                <div class="reihe versetzt">
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                </div>
+
+
+            </div>
+
+            <!--estrade-rechts-->
+            <div class="estrade rechts abschnitt mitte-abschnitt-rechts">
+
+                <!-- Beschriftung -->
+                <div class="abschnitt-name">Estrade rechts</div>
+
+                <!-- Reihe 1 - 10 sitze-->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 2 -->
+                <div class="reihe versetzt">
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                </div>
+
+                <!-- Reihe 3 - 10 sitze-->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 4 -->
+                <div class="reihe versetzt">
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+
+                    <div class="sitz p-55"></div>
+                </div>
+
+
+            </div>
+
+            <!--seitenestrade-rechts-->
+            <div class="seitenestrade rechts abschnitt">
+
+                <!-- Beschriftung -->
+                <div class="abschnitt-name">Seitenestrade rechts</div>
+
+                <!-- Reihe 1-->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                </div>
+
+                <!-- Reihe 2 -->
+                <div class="reihe">
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40"></div>
+
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40"></div>
+                </div>
+
+                <!-- Reihe 3 -->
+                <div class="reihe">
+                    <div class="sitz versteckt"></div>
+                    <div class="sitz versteckt"></div>
+                    <div class="sitz versteckt"></div>
+
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60"></div>
+                </div>
+
+                <!-- Reihe 4 -->
+                <div class="reihe">
+                    <div class="sitz versteckt"></div>
+                    <div class="sitz versteckt"></div>
+                    <div class="sitz versteckt"></div>
+
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- balkon -->
+        <div class="bereich balkon">
+
+            <!--balkon-links-->
+            <div class="balkon links abschnitt">
+
+                <!-- Beschriftung -->
+                <div class="abschnitt-name">Balkon links</div>
+
+                <!-- Reihe 1 - 12 sitze-->
+                <div class="reihe">
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                </div>
+
+                <!-- Reihe 2 -->
+                <div class="reihe">
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                </div>
+
+                <!-- Reihe 3-->
+                <div class="reihe">
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                </div>
+
+                <!-- Reihe 4 -->
+                <div class="reihe">
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                </div>
+
+                <!-- Reihe 5 -->
+                <div class="reihe">
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                </div>
+
+                <!-- Reihe 6 (70)-->
+                <div class="reihe">
+                    <div class="sitz p-70 versteckt"></div>
+                    <div class="sitz p-70 versteckt"></div>
+                    <div class="sitz p-70 versteckt"></div>
+
+                    <div class="sitz p-70 versteckt"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                </div>
+
+                <!-- Reihe 7 (70) -->
+                <div class="reihe">
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70 versteckt"></div>
+
+                    <div class="sitz p-70 versteckt"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                </div>
+
+                <!-- Reihe 8 (70) -->
+                <div class="reihe">
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                </div>
+
+            </div>
+
+            <!--balkon-rechts-->
+            <div class="balkon rechts abschnitt">
+
+                <!-- Beschriftung -->
+                <div class="abschnitt-name">Balkon rechts</div>
+
+                <!-- Reihe 1 - 12 sitze-->
+                <div class="reihe">
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                </div>
+
+                <!-- Reihe 2 -->
+                <div class="reihe">
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75 versteckt"></div>
+
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                </div>
+
+                <!-- Reihe 3-->
+                <div class="reihe">
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75 versteckt"></div>
+
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                </div>
+
+                <!-- Reihe 4 -->
+                <div class="reihe">
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75 versteckt"></div>
+
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                </div>
+
+                <!-- Reihe 5 -->
+                <div class="reihe">
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75 versteckt"></div>
+
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                    <div class="sitz p-75 versteckt"></div>
+                </div>
+
+                <!-- Reihe 6 (70)-->
+                <div class="reihe">
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70 versteckt"></div>
+
+                    <div class="sitz p-70 versteckt"></div>
+                    <div class="sitz p-70 versteckt"></div>
+                    <div class="sitz p-70 versteckt"></div>
+                </div>
+
+                <!-- Reihe 7 (70) -->
+                <div class="reihe">
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70 versteckt"></div>
+
+                    <div class="sitz p-70 versteckt"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                </div>
+
+                <!-- Reihe 8 (70) -->
+                <div class="reihe">
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+        <!-- endinject -->
+    </div>
 
 
     <div id="help-container">
@@ -713,6 +2374,7 @@
 <div class="help-ready"></div>
         <!-- endinject -->
     </div>
+
 
     <div id="modal-center-container">
         <!-- inject:views/modal_center.html -->
@@ -1159,8 +2821,8 @@
 <script src="js/controllers/HelpController.js"></script>
 <script src="js/controllers/PanelController.js"></script>
 <script src="js/controllers/SeatSelectController.js"></script>
-<script src="js/editor/TasEditor.js"></script>
 <script src="js/services/PouchDBService.js"></script>
+<script src="js/editor/TasEditor.js"></script>
 <!-- endinject -->
 
 

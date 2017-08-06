@@ -1,0 +1,46 @@
+@import "farben";
+
+.address-form-plz {
+  padding-right: 2px;
+}
+
+.address-form-plz input.form-control {
+  padding: 2px;
+  text-align: center;
+}
+
+.address-form-city {
+  padding-left: 0;
+}
+
+.has-error input {
+  background-color: #ffe6e1;
+}
+
+.form-requrements {
+
+}
+
+.form-requrements {
+
+  // Liste
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  // Liste Elemente
+  ul li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  a{
+    font-size: 15px;
+    line-height: 2em;
+    font-weight: 300;
+    color: $color-tickets-schmuck;
+    margin: 10px;
+
+  }
+}

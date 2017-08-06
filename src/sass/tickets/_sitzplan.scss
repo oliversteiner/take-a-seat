@@ -1,0 +1,121 @@
+@import "farben";
+
+.sitz-liste-reihe,
+.sitz-liste-nummer,
+.sitz-liste-preis,
+.sitz-liste-gutschein {
+
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  font-family: "Lato", SFUIText, "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  min-width: 80px;
+
+}
+
+.sitz-liste-reihe {
+  padding-right: 30px;
+}
+
+.sitz-liste-nummer {
+  padding-right: 30px;
+}
+
+.sitz-liste-preis {
+  padding-right: 30px;
+  color: $color-tickets-text-mittel;
+  font-family: "Lato-light", SFUIText, "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.sitz-liste-gutschein label {
+  font-size: 12px;
+
+}
+
+.sitz-liste-gutschein {
+  min-width: 0px;
+
+}
+
+.sitz-liste-klein {
+  font-size: 12px;
+  margin-right: 5px;
+  color: $color-tickets-text-mittel;
+
+}
+
+h3.sitz-liste-abschnitt {
+  /* Balkon links: */
+  font-family: Lato-Regular;
+  font-size: 14px;
+  color: #44857B;
+}
+
+.sitz-liste-total {
+  display: flex;
+  justify-content: space-between;
+
+  border-top: solid 1px black;
+
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+
+.sitz-liste-total-sitze {
+
+}
+
+.sitz-liste-total-preis {
+  padding-right: 10px;
+}
+
+.sitz-liste-total label {
+  font-family: Lato, SFUIText, Muli, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  height: 14px;
+  line-height: 14px;
+
+  color: $color-tickets-schmuck;
+  padding-right: 5px;
+
+}
+
+// Tabelle
+
+table.preiskategorien {
+  width: 100%;
+  padding: 0 20px;
+
+  th{
+    padding-left: 20px;
+  }
+
+  .unterbrecher hr {
+    margin: 7px;
+    padding: 0;
+  }
+
+  .klein{
+    font-size: 0.8em;
+  }
+}
+
+// Allgemeine Informationen
+
+ul.allgemeine-informationen {
+  margin: 0;
+  padding: 0;
+}
+
+ul.allgemeine-informationen li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+//

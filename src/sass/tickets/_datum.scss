@@ -1,3 +1,5 @@
+@import "farben";
+
 .ticket-liste-tag,
 .ticket-liste-datum,
 .ticket-liste-zeit,
@@ -10,23 +12,22 @@
   //  border: solid 1px skyblue;
   height: 100%;
 
+  color: $color-tickets-text-mittel;
+
 }
 
 .ticket-liste-tag {
   padding-left: 10px;
   width: 70px;
-  color: gray;
 }
 
 .ticket-liste-datum {
   font-weight: bold;
-  font-weight: 900;
   width: 80px;
 }
 
 .ticket-liste-zeit {
   width: 80px;
-  color: gray;
 
 }
 
@@ -36,17 +37,19 @@
   margin: 1px;
 }
 
-.ticket-liste-kopf {
+section .ticket-liste-kopf {
   text-align: center;
-  border-bottom: solid 2px #6DC8BB;
 
   h2 {
+    font-family: "Lato-light","Lato", SFUIText, "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
 
     font-size: 24px;
-    color: #6DC8BB;
+    color: $color-tickets-schmuck;
     margin: 0;
     padding: 0 0 20px 0;
+    border-bottom: solid 2px $color-tickets-schmuck;
+
   }
 
 }

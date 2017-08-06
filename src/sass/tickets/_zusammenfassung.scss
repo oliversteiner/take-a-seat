@@ -1,0 +1,47 @@
+@import "farben";
+
+#zusammenfassung-content {
+
+  address {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: normal;
+  }
+
+  address hr {
+    padding: 0;
+    margin: 5px 0;
+  }
+
+  .list-group-item {
+
+    padding: 6px 15px;
+    border: none;
+    border-bottom: solid 1px $color-tickets-border-heller;
+    margin: 0;
+  }
+
+  .list-group {
+    border: none;
+  }
+
+
+
+// Auffuehrung
+
+.zsf-auffuehrung {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.zsf-auffuehrung-titel {
+  font-size: 2em;
+  font-family: $font-tickets-light;
+  color: $color-tickets-schmuck;
+}
+
+.zsf-auffuehrung-datum {
+  font-weight: bold;
+}
+
+}

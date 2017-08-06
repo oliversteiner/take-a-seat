@@ -19,12 +19,14 @@
 
 
 // Tickets
+@import "tickets/farben";
+@import "tickets/buttons";
 @import "tickets/tickets";
 
 @import "tickets/plan";
 @import "tickets/start";
 @import "tickets/datum";
-@import "tickets/sitzplatz";
+@import "tickets/sitzplan";
 @import "tickets/adresse";
 @import "tickets/zusammenfassung";
 

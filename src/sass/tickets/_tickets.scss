@@ -1,8 +1,34 @@
+@import "farben";
+
+
+
 section.section-ticket {
 
-  div, p, h1, h2, h3, h4, ul, ol, a {
-    font-family: "Lato", SFUIText, "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  div, p, h1, h2, h3, h4, ul, ol, table, td, th,  a {
+    font-family: $font-tickets;
+  }
+
+  h1, h3 ul, ol, ul {
+    font-family: $font-tickets-light;
+  }
+
+  h1 {
+    font-size: 30px;
     font-weight: 300;
+  }
+
+  h2 {
+    font-size: 18px;
+
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px silver;
+  }
+
+  h3 {
+    color: $color-tickets-schmuck;
+    font-size: 15px;
+    padding-left: 15px;
   }
 
   // iphone 7 size
@@ -32,61 +58,61 @@ section.section-ticket {
 
   }
 
-}
+  // Blöcke ------------------------------
 
-// Blöcke ------------------------------
+  .block-navigation {
+    // border: 1px solid silver;
 
-.block-navigation {
-  // border: 1px solid silver;
-
-  // Grösse
-  min-height: 44px;
-}
-
-.block-titel {
-  //  border: 1px solid silver;
-
-  // Grösse
-  min-height: 50px;
-
-  // Abstand
-  margin: 0 20px;
-  padding: 10px;
-
-  // Textausrichtung
-  text-align: center;
-  vertical-align: middle;
-
-  h1 {
-    font-size: 30px;
-    color: #333333;
-    margin: 0;
-    padding: 0;
+    // Grösse
+    min-height: 44px;
   }
-}
 
-.block-anleitung {
-  // border: 1px solid silver;
+  .block-titel {
+    //  border: 1px solid silver;
 
-  // Grösse
-  min-height: 50px;
+    // Grösse
+    min-height: 50px;
 
-  // Abstand
-  margin: 0 20px 20px 20px;
-  padding: 10px;
+    // Abstand
+    margin: 0 20px;
+    padding: 10px;
 
-  // Textausrichtung
-  text-align: center;
-  vertical-align: top;
+    // Textausrichtung
+    text-align: center;
+    vertical-align: middle;
 
-  h2 {
-    font-size: 19px;
-    line-height: 23px;
-    color: #21a08e;
-
-    margin: 0;
-    padding: 0;
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
   }
+
+  .block-anleitung {
+    // border: 1px solid silver;
+
+    // Grösse
+    min-height: 50px;
+
+    // Abstand
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+
+    // Textausrichtung
+    text-align: center;
+    vertical-align: top;
+
+    p {
+      font-family: "Lato-light", "Lato", SFUIText, "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+      font-size: 19px;
+      line-height: 23px;
+      color: $color-tickets-schmuck;
+
+      margin: 0;
+      padding: 0;
+    }
+  }
+
 }
 
 // Debug ------------------------------
@@ -96,62 +122,6 @@ section.section-ticket {
   left: 49vw;
 
   font-size: 12px;
-
-}
-
-// buttons  ------------------------------
-
-.btn-tas-zurueck {
-
-  background-color: white;
-  border-color: transparent;
-
-  /* Back: */
-
-  font-size: 17px;
-  color: #9B9B9B;
-
-}
-
-.btn-tas-weiter {
-  /* BG: */
-  background: #E1F5CC;
-  border: 1px solid #CCCCCC;
-  border-radius: 16px;
-
-  /* 12:12:12:12: */
-  font-size: 14px;
-  color: #666666;
-  line-height: 21px;
-
-  &:hover {
-    background: #93c183;
-
-  }
-}
-
-.btn-tas-weiter.disabled {
-  /* BG: */
-  border: 1px solid #CCCCCC;
-  background-color: transparent;
-
-}
-
-.button-active {
-
-}
-
-.btn-tas-active {
-  background: #E1F5CC;
-  border: 1px solid #CCCCCC;
-  border-radius: 16px;
-
-  font-size: 14px;
-  color: #666666;
-  line-height: 21px;
-}
-
-.btn-tas-deactivated {
 
 }
 

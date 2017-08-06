@@ -1,0 +1,102 @@
+@import "farben";
+
+// TAS RAdio Button
+$tas-radio-radius: 20px;
+
+.tas-radio {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 3px;
+
+}
+
+
+.tas-radio-outer {
+  display: inline-flex;
+  width: $tas-radio-radius;
+  height: $tas-radio-radius;
+  border-radius: $tas-radio-radius;
+  border: solid 1px silver;
+  padding: 15%;
+}
+
+.tas-radio-inner {
+  display: inline-flex;
+
+  width: 100%;
+  height: 100%;
+  border-radius: $tas-radio-radius;
+  border: solid 1px transparent;
+  margin: auto;
+}
+
+.tas-radio-active .tas-radio-inner{
+  border: solid 1px silver;
+  background: $color-tickets-buttons-success-darker;
+}
+
+.tas-radio:hover .tas-radio-inner{
+  border: solid 1px silver;
+  background: $color-tickets-buttons-success-hover;
+}
+
+
+
+// buttons  ------------------------------
+
+.btn-tas-zurueck {
+
+  background-color: white;
+  border-color: transparent;
+
+  /* Back: */
+
+  font-size: 17px;
+  color: #9B9B9B;
+
+}
+
+.btn-tas-weiter,
+.btn-tas-buchen {
+  /* BG: */
+  background: $color-tickets-buttons-success;
+  border: 1px solid #CCCCCC;
+  border-radius: 16px;
+
+  /* 12:12:12:12: */
+  font-size: 14px;
+  color: #666666;
+  line-height: 21px;
+
+  &:hover {
+    background: $color-tickets-buttons-success-hover;
+
+  }
+}
+
+.btn-tas-weiter.disabled {
+  /* BG: */
+  border: 1px solid #CCCCCC;
+  background-color: transparent;
+
+}
+
+.button-active {
+
+}
+
+.btn-tas-active {
+  background: $color-tickets-buttons-success;
+  border: 1px solid #CCCCCC;
+  border-radius: 16px;
+
+  font-size: 14px;
+  color: #666666;
+  line-height: 21px;
+}
+
+.btn-tas-deactivated {
+
+}

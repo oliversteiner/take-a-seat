@@ -58,5 +58,10 @@ $(function () {
      seatSelectController.start();
 
 
+     // den Sitzplan an die richtige Stelle verschieben
+
+    const $target = $('#plan-container');
+
+    $('#plan-content').appendTo($target);
 
 });
