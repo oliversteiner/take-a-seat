@@ -17,7 +17,7 @@ var SeatSelectController = (function () {
     SeatSelectController.prototype.showDetails = function (elem) {
         var $elem = $(elem);
         var $clone = $elem.clone(true);
-        $('#modal-center').modal('show');
+        $('#modal-plan').modal('show');
         $('#modal-abschnitt-solo').show();
         $('#solo-dock').empty();
         $clone.appendTo('#solo-dock');

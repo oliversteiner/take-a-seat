@@ -25,23 +25,21 @@
     border: none;
   }
 
+  // Auffuehrung
 
+  .zsf-auffuehrung {
+    text-align: center;
+    padding-top: 20px;
+  }
 
-// Auffuehrung
+  .zsf-auffuehrung-titel {
+    font-size: 2em;
+    font-family: $font-tickets-light;
+    color: $color-tickets-schmuck;
+  }
 
-.zsf-auffuehrung {
-  text-align: center;
-  padding-top: 20px;
-}
-
-.zsf-auffuehrung-titel {
-  font-size: 2em;
-  font-family: $font-tickets-light;
-  color: $color-tickets-schmuck;
-}
-
-.zsf-auffuehrung-datum {
-  font-weight: bold;
-}
+  .zsf-auffuehrung-datum {
+    font-weight: bold;
+  }
 
 }

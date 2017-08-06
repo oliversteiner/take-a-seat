@@ -35,41 +35,8 @@
     <title>Take a Seat</title>
 
 </head>
-<body class="">
-<nav class="navbar navbar-default" id="main_navigation">
-    <!-- inject:views/main_navigation.html -->
-    <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header ">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"> Take a Seat</a>
-    </div>
+<body>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse   navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav  navbar-nav">
-            <li><a class="console-button-toggle"><span class="glyphicon glyphicon-console"></span></a></li>
-            <li><a class="help-button-toggle " data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a></li>
-            <li><a class="editor-button-toggle">Editor-Modus</a></li>
-            <li><a class="nicer-panel-tas-button-toggle">TAS-Panel</a></li>
-            <li><a class="nicer-panel-blank-button-toggle">Blanko-Panel</a></li>
-        </ul>
-
-        <ul class="nav  navbar-right">
-        </ul>
-
-
-    </div><!-- /.navbar-collapse -->
-</div><!-- /.container-fluid -->
-
-    <!-- endinject -->
-</nav>
 <header>
 
 </header>
@@ -91,8 +58,6 @@
 
         <nav class="block-navigation">
             <!-- button zurück -->
-            <button class="btn btn-tas-zurueck"><span class="glyphicon glyphicon-chevron-left"></span> zurück
-            </button>
 
         </nav>
 
@@ -182,7 +147,7 @@
     <footer>
 
         <!-- Button "weiter zu" -->
-        <button class="btn btn-block btn-lg btn-tas-weiter ">
+        <button class="btn btn-block btn-lg btn-tas-weiter " onclick="goTo('datum')">
             los gehts!
         </button>
 
@@ -209,7 +174,7 @@
 
         <nav class="block-navigation">
             <!-- button zurück -->
-            <button class="btn btn-tas-zurueck">
+            <button class="btn btn-tas-zurueck"  onclick="goTo('start')">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 zurück
             </button>
@@ -482,7 +447,7 @@
     <footer>
 
         <!-- Button "weiter zu" -->
-        <button class="btn btn-block btn-lg btn-tas-weiter ">
+        <button class="btn btn-block btn-lg btn-tas-weiter "  onclick="goTo('sitzplan')">
             weiter zu
         </button>
 
@@ -497,7 +462,7 @@
     <!-- sitzplan -->
     <div id="sitzplan-container">
         <!-- inject:views/tickets/sitzplan.html -->
-        <section class="section-ticket" id="vorlage-content">
+        <section class="section-ticket" id="sitzplan-content">
 
     <!-- Debug -->
     <div class="debug-page-name">Sitzplan</div>
@@ -508,7 +473,7 @@
 
         <nav class="block-navigation">
             <!-- button zurück -->
-            <button class="btn btn-tas-zurueck">
+            <button class="btn btn-tas-zurueck" onclick="goTo('datum')">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 zurück
             </button>
@@ -608,8 +573,6 @@
         </table>
 
 
-
-
     </article>
 
 
@@ -617,7 +580,7 @@
     <footer>
 
         <!-- Button "weiter zu" -->
-        <button class="btn btn-block btn-lg btn-tas-weiter ">
+        <button class="btn btn-block btn-lg btn-tas-weiter"  onclick="goTo('adresse')">
             weiter zu
         </button>
 
@@ -643,7 +606,7 @@
 
         <nav class="block-navigation">
             <!-- button zurück -->
-            <button class="btn btn-tas-zurueck">
+            <button class="btn btn-tas-zurueck" onclick="goTo('sitzplan')">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 zurück
             </button>
@@ -820,7 +783,7 @@
     <footer>
 
         <!-- Button "weiter zu" -->
-        <button class="btn btn-block btn-lg btn-tas-weiter ">
+        <button class="btn btn-block btn-lg btn-tas-weiter " onclick="goTo('zusammenfassung')">
             weiter zu
         </button>
 
@@ -846,7 +809,7 @@
 
         <nav class="block-navigation">
             <!-- button zurück -->
-            <button class="btn btn-tas-zurueck">
+            <button class="btn btn-tas-zurueck" onclick="goTo('sitzplan')">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 zurück
             </button>
@@ -1049,7 +1012,7 @@
     <footer>
 
         <!-- Button "weiter zu" -->
-        <button class="btn btn-block btn-lg btn-tas-buchen ">
+        <button class="btn btn-block btn-lg btn-tas-buchen" onclick="buchen()">
             buchen
         </button>
 
@@ -2376,11 +2339,11 @@
     </div>
 
 
-    <div id="modal-center-container">
-        <!-- inject:views/modal_center.html -->
-        <div id="modal-remote-center-content">
+    <div id="modal-plan-container">
+        <!-- inject:views/modal_plan.html -->
+        <div id="modal-plan-content">
 
-    <div id="modal-center" class="modal fade" tabindex="-1" role="dialog">
+    <div id="modal-plan" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <!-- modal-content -->
@@ -2390,7 +2353,7 @@
                 <div id="modal-abschnitt-solo" style="display:none;">
                     <div class="well well-transparent">
 
-                        <div id="solo-dock"> SOLO Dock</div>
+                        <div id="solo-dock"></div>
                     </div>
                 </div>
 
@@ -2403,6 +2366,49 @@
 
 
 </div>
+        <!-- endinject -->
+    </div>
+
+    <div id="modal-buchen-container">
+        <!-- inject:views/modal_buchen.html -->
+        <div id="modal-buchen-content">
+    <div id="modal-buchen" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- modal-content -->
+
+
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="modal-buchen-taube">
+                                    <span class="tas-pikto tas-pikto-carrier-pigeon"></span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="block-titel">
+                                    <h1>Vielen Dank,</h1></div>
+                                <div class="block-anleitung">
+                                    <p> die Reservierung ist gebucht.</p>
+                                    <p> Viel Spass an der Operette!</p>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-lg btn-tas-weiter btn-tas-zur-webseite" onclick="goToWebsite()">zurück zur Webseite</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal-center -->
+</div> <!-- modal-center-content-->
         <!-- endinject -->
     </div>
 
@@ -2821,8 +2827,9 @@
 <script src="js/controllers/HelpController.js"></script>
 <script src="js/controllers/PanelController.js"></script>
 <script src="js/controllers/SeatSelectController.js"></script>
-<script src="js/services/PouchDBService.js"></script>
 <script src="js/editor/TasEditor.js"></script>
+<script src="js/services/PouchDBService.js"></script>
+<script src="js/services/navigationService.js"></script>
 <!-- endinject -->
 
 

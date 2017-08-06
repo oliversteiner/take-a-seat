@@ -30,6 +30,7 @@ let options = {
 
 $(function () {
 
+
     // ostConsole
      consoleController = new ConsoleController();
      consoleController.start();
@@ -64,4 +65,39 @@ $(function () {
 
     $('#plan-content').appendTo($target);
 
+
+
+
+buchen()
 });
+
+// gehe zu
+
+function goTo(seitenname:string){
+
+    // check ob ok zu wechseln
+
+    // Alle seiten ausblenden
+
+    $('section.section-ticket').hide();
+
+    // neue Seite einblenden
+    $('#'+seitenname+'-content').show();
+    window.scrollTo(0,0);
+
+}
+
+// gehe zu
+
+function buchen(){
+
+    $('#modal-buchen').modal('show');
+
+}
+
+
+function goToWebsite(){
+    $('#modal-buchen').modal('hide');
+
+}
+

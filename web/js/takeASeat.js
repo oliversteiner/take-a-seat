@@ -70,7 +70,7 @@ var TakeASeat = (function () {
      */
     TakeASeat.openModal = function () {
         // Modal öffnen
-        $('#modal-center').modal('show');
+        $('#modal-plan').modal('show');
     };
     /**
      * closeModal
@@ -78,7 +78,7 @@ var TakeASeat = (function () {
      */
     TakeASeat.closeModal = function () {
         // Modal schliessen
-        $('#modal-center').modal('hide');
+        $('#modal-plan').modal('hide');
     };
     /**
      * detectMobile

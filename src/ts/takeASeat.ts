@@ -103,7 +103,7 @@ class TakeASeat {
     static openModal() {
 
         // Modal öffnen
-        $('#modal-center').modal('show');
+        $('#modal-plan').modal('show');
     }
 
 
@@ -114,7 +114,7 @@ class TakeASeat {
     static closeModal() {
 
         // Modal schliessen
-        $('#modal-center').modal('hide');
+        $('#modal-plan').modal('hide');
     }
 
 

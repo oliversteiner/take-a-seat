@@ -1,4 +1,4 @@
-<section class="section-ticket" id="vorlage-content">
+<section class="section-ticket" id="sitzplan-content">
 
     <!-- Debug -->
     <div class="debug-page-name">Sitzplan</div>
@@ -9,7 +9,7 @@
 
         <nav class="block-navigation">
             <!-- button zurück -->
-            <button class="btn btn-tas-zurueck">
+            <button class="btn btn-tas-zurueck" onclick="goTo('datum')">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 zurück
             </button>
@@ -109,8 +109,6 @@
         </table>
 
 
-
-
     </article>
 
 
@@ -118,7 +116,7 @@
     <footer>
 
         <!-- Button "weiter zu" -->
-        <button class="btn btn-block btn-lg btn-tas-weiter ">
+        <button class="btn btn-block btn-lg btn-tas-weiter"  onclick="goTo('adresse')">
             weiter zu
         </button>
 

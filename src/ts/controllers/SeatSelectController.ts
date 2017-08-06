@@ -33,7 +33,7 @@ class SeatSelectController {
         const $elem = $(elem);
         const $clone = $elem.clone( true );
 
-        $('#modal-center').modal('show');
+        $('#modal-plan').modal('show');
         $('#modal-abschnitt-solo').show();
         $('#solo-dock').empty();
 

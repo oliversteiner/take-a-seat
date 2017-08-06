@@ -1,8 +1,27 @@
 @import "farben";
 
 
+section.section-ticket{
+position: absolute;
+display: none;
+}
+
+section.section-ticket#start-content{
+  display: block;
+  width: 100%;
+
+}
+
+
 
 section.section-ticket {
+
+  // iphone 7 size
+  // width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
 
   div, p, h1, h2, h3, h4, ul, ol, table, td, th,  a {
     font-family: $font-tickets;
@@ -31,14 +50,9 @@ section.section-ticket {
     padding-left: 15px;
   }
 
-  // iphone 7 size
-  width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
 
-  // Text
-  border: 1px solid gainsboro;
+
+//  border: 1px solid gainsboro;
 
   header {
 
@@ -113,7 +127,6 @@ section.section-ticket {
     }
   }
 
-}
 
 // Debug ------------------------------
 
@@ -122,6 +135,8 @@ section.section-ticket {
   left: 49vw;
 
   font-size: 12px;
+
+  display: none;
 
 }
 
