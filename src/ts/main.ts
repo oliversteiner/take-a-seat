@@ -66,9 +66,8 @@ $(function () {
     $('#plan-content').appendTo($target);
 
 
+    goTo('sitzplan');
 
-
-buchen()
 });
 
 // gehe zu
@@ -98,6 +97,31 @@ function buchen(){
 
 function goToWebsite(){
     $('#modal-buchen').modal('hide');
+
+}
+
+function showAbschnittNames(){
+
+    // Button name
+    const $show_name_button = $('.show-name-button-toggle');
+    let button_text;
+
+    // add Class to Root Elem
+    const $bestuhlungs_layout = $('#bestuhlungs-layout');
+    const class_name = 'abschnitt-name-ein';
+
+    $bestuhlungs_layout.toggleClass(class_name);
+
+
+    // Button ändern
+    if ($bestuhlungs_layout.hasClass( class_name )){
+        button_text = 'Namen ausblenden'
+    }
+    else {
+        button_text = 'Namen einblenden'
+    }
+    $show_name_button.html( button_text);
+
 
 }
 

@@ -22,7 +22,7 @@ $(function () {
     // den Sitzplan an die richtige Stelle verschieben
     var $target = $('#plan-container');
     $('#plan-content').appendTo($target);
-    buchen();
+    goTo('sitzplan');
 });
 // gehe zu
 function goTo(seitenname) {
@@ -39,4 +39,21 @@ function buchen() {
 }
 function goToWebsite() {
     $('#modal-buchen').modal('hide');
+}
+function showAbschnittNames() {
+    // Button name
+    var $show_name_button = $('.show-name-button-toggle');
+    var button_text;
+    // add Class to Root Elem
+    var $bestuhlungs_layout = $('#bestuhlungs-layout');
+    var class_name = 'abschnitt-name-ein';
+    $bestuhlungs_layout.toggleClass(class_name);
+    // Button ändern
+    if ($bestuhlungs_layout.hasClass(class_name)) {
+        button_text = 'Namen ausblenden';
+    }
+    else {
+        button_text = 'Namen einblenden';
+    }
+    $show_name_button.html(button_text);
 }

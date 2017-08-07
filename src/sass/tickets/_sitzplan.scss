@@ -87,20 +87,52 @@ h3.sitz-liste-abschnitt {
 
 // Tabelle
 
-table.preiskategorien {
-  width: 100%;
-  padding: 0 20px;
+article.preistabelle {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
-  th{
-    padding-left: 20px;
+table.preiskategorien {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+
+  tr > th,
+  tr > td {
+    padding: 3px;
+    border: none;
+  }
+
+  td.legende,
+  th.kategorie,
+  td.reihen,
+  td.preis {
+    background-color: white;
+  }
+
+  tr:hover {
+
+    td.legende,
+    th.kategorie,
+    td.reihen,
+    td.preis {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    cursor: pointer;
+  }
+
+
+
+  td.legende {
   }
 
   .unterbrecher hr {
-    margin: 7px;
+    margin: 2px;
     padding: 0;
+    cursor: default;
   }
 
-  .klein{
+  .klein {
     font-size: 0.8em;
   }
 }
@@ -119,3 +151,10 @@ ul.allgemeine-informationen li {
 }
 
 //
+
+.plan-toolbox {
+  top: -20px;
+  position: relative;
+  text-align: center;
+  padding-bottom: 10px;
+}

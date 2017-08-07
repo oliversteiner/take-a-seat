@@ -100,3 +100,21 @@ $tas-radio-radius: 20px;
 .btn-tas-deactivated {
 
 }
+
+
+.btn-tas-sm {
+  /* BG: */
+  background: transparent;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+
+  /* 12:12:12:12: */
+  font-size: 14px;
+  color: #666666;
+  line-height: 21px;
+
+  &:hover {
+    background: $color-tickets-buttons-success-hover;
+
+  }
+}

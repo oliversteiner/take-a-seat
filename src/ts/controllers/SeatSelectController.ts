@@ -15,7 +15,7 @@ class SeatSelectController {
         sitzeVierschieben('rechts');
 
 
-        }
+    }
 
 
     addEventListeners() {
@@ -26,12 +26,19 @@ class SeatSelectController {
             scope.showDetails(this);
         });
 
+
+        $('table.preiskategorien tr').mouseover(this, function () {
+
+            scope.abschnittHervorheben(this);
+        })
+        ;
+
     }
 
     showDetails(elem: any) {
 
         const $elem = $(elem);
-        const $clone = $elem.clone( true );
+        const $clone = $elem.clone(true);
 
         $('#modal-plan').modal('show');
         $('#modal-abschnitt-solo').show();
@@ -43,6 +50,40 @@ class SeatSelectController {
 
 
     }
+
+
+
+
+
+    abschnittHervorheben(elem: any) {
+
+        // Aus Performancegründen kein JQuery nehmen !
+
+        // Suche alle sizte.hervorbehoben und neutralisiere sie
+        let nodeList_old = document.body.querySelectorAll('.hervorheben');
+
+        for (let i = 0; i < nodeList_old.length; i++) {
+            nodeList_old[i].classList.remove('hervorheben');
+        }
+
+
+        const abschnitt = $(elem).data('kat-abschnitt');
+        const preis = $(elem).data('kat-preis');
+
+        let searchstring_bereich = '.' + abschnitt;
+        let searchstring_preis = '.p-' + preis;
+
+        let searchstring = searchstring_bereich + '  ' + searchstring_preis;
+
+        let nodelist = document.body.querySelectorAll(searchstring);
+
+        for (let i = 0; i < nodelist.length; i++) {
+
+            nodelist[i].classList.add('hervorheben');
+        }
+
+    }
+
 }
 
 

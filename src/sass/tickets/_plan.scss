@@ -55,6 +55,11 @@ $color-miniplan-sitze: #737373;
   background-color: white;
   pointer-events: all;
   margin: 1px;
+  opacity: 0.6;
+}
+
+.sitz.hervorheben{
+  opacity: 1;
 }
 
 .versetzt {
@@ -71,24 +76,28 @@ $color-miniplan-sitze: #737373;
 
 // Kategorien:
 
+.p-00 {
+  background-color: #0a49bb;
+}
+
 .p-30 {
-  background-color: #ad70bb;
+  background-color: #bb48b9;
 }
 
 .p-40 {
-  background-color: #397a8b;
+  background-color: #08628b;
 }
 
 .p-50 {
-  background-color: #86b884;
+  background-color: #3cb842;
 }
 
 .p-55 {
-  background-color: #8e9de2;
+  background-color: #4b62e2;
 }
 
 .p-60 {
-  background-color: #cbbb39;
+  background-color: #cbad13;
 }
 
 .p-70 {
@@ -96,13 +105,13 @@ $color-miniplan-sitze: #737373;
 }
 
 .p-75 {
-  background-color: deepskyblue;
+  background-color: #147bff;
 }
 
 .sitz:hover {
   background-color: $color-sitz-border-hover;
+  opacity: 1;
   cursor: pointer;
-  border-color: $color-sitz-border-hover;
 }
 
 .versteckt {
@@ -160,7 +169,6 @@ $color-miniplan-sitze: #737373;
 }
 
 .rollstuhl {
-  background-color: #5139cb;
   margin-top: 20px;
 }
 
@@ -197,17 +205,30 @@ $color-miniplan-sitze: #737373;
   transform: skewY(25deg);
   top: 25px;
 }
+.abschnitt-name{
+  display: none;
+}
 
 
-
-.abschnitt-name {
-  position: absolute;
-  flex: inherit;
-  z-index: 2;
-  margin-top: 10px;
-  margin-left: auto;
+#bestuhlungs-layout.abschnitt-name-ein .abschnitt-name {
+position: absolute;
+  display: flex;
   width: 100%;
-  font-size: 9px;
+  z-index: 2;
+  justify-content: center;
+  padding-top: 20px;
+
+
+
+}
+
+#bestuhlungs-layout.abschnitt-name-ein .abschnitt-name span {
+display: flex;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 5px 10px;
+
 }
 
 /*==========  Non-Mobile First Method  ==========*/
@@ -311,6 +332,22 @@ $color-miniplan-sitze: #737373;
     font-size: 15px;
   }
 
+
+// Abschnitt Name Small Devices
+  #bestuhlungs-layout.abschnitt-name-ein .abschnitt-name {
+    padding-top: 10px;
+  }
+
+  #bestuhlungs-layout.abschnitt-name-ein .abschnitt-name span {
+    border-radius: 2px;
+    padding: 2px 5px;
+    font-size: 12px;
+
+  }
+
+
+
+
 }
 
 /* Extra Small Devices, Phones */
@@ -321,10 +358,12 @@ $color-miniplan-sitze: #737373;
     pointer-events: all;
     cursor: pointer;
     background-color: transparent;
+  }
+  .abschnitt .reihe {
     opacity: 0.5;
   }
 
-  .abschnitt:hover {
+  .abschnitt:hover .reihe {
     opacity: 1;
   }
 
@@ -373,6 +412,20 @@ $color-miniplan-sitze: #737373;
   .mitte-abschnitt-rechts {
     padding-right: 5px;
   }
+
+
+  // Abschnitt Name Extra Small Devices
+  #bestuhlungs-layout.abschnitt-name-ein .abschnitt-name {
+    padding-top: 10px;
+  }
+
+  #bestuhlungs-layout.abschnitt-name-ein .abschnitt-name span {
+    border-radius: 2px;
+    padding: 1px 3px;
+    font-size: 9px;
+
+  }
+
 
 }
 
