@@ -48,6 +48,10 @@ var TakeASeat = (function () {
      */
     TakeASeat.prototype.addEventListeners = function () {
         //
+        $('.list-group-tickets .list-group-item').click(function () {
+            $('.ausgewaehlt').removeClass('ausgewaehlt');
+            $(this).addClass('ausgewaehlt');
+        });
     };
     /**
      * addKeystrokes

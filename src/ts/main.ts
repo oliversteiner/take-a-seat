@@ -66,7 +66,7 @@ $(function () {
     $('#plan-content').appendTo($target);
 
 
-    goTo('sitzplan');
+   // goTo('sitzplan');
 
 });
 

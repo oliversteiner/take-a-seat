@@ -22,7 +22,7 @@ $(function () {
     // den Sitzplan an die richtige Stelle verschieben
     var $target = $('#plan-container');
     $('#plan-content').appendTo($target);
-    goTo('sitzplan');
+    // goTo('sitzplan');
 });
 // gehe zu
 function goTo(seitenname) {

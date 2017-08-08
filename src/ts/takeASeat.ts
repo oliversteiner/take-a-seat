@@ -73,6 +73,19 @@ class TakeASeat {
 
         //
 
+
+        $('.list-group-tickets .list-group-item').click(function () {
+
+
+            $('.ausgewaehlt').removeClass('ausgewaehlt');
+
+
+        $(this).addClass('ausgewaehlt');
+
+
+
+        })
+
     }
 
     /**
