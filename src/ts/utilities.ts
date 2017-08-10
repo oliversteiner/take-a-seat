@@ -50,3 +50,8 @@ function sitzeVierschieben(position:string){
 
     });
 }
+
+
+function isInPage(node:any |HTMLElement) {
+    return (node === document.body) ? false : document.body.contains(node);
+}

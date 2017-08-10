@@ -1,7 +1,7 @@
 <div id="plan-content">
 
 
-    <div id="bestuhlungs-layout" >
+    <div id="bestuhlungs-layout">
         <!-- Bühne -->
         <div class="bereich buehne">
             <div id="buehne" class="aufbauten">
@@ -16,8 +16,8 @@
             <div id="orchester-links-rollstuhl" class="abschnitt rollstuhl links">
                 <div class="abschnitt-name"><span>Rollstuhl links</span></div>
 
-                <div class="reihe">
-                    <div class="sitz p-00"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-00" data-preis="00"></div>
                 </div>
             </div>
 
@@ -26,21 +26,21 @@
                 <div class="abschnitt-name"><span>Orchester links</span></div>
 
                 <!-- Reihe 1-->
-                <div class="reihe">
-                    <div class="sitz p-30"></div>
-                    <div class="sitz p-30"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-30" data-preis="30"></div>
+                    <div class="sitz p-30" data-preis="30"></div>
                 </div>
 
                 <!-- Reihe 2 -->
-                <div class="reihe">
-                    <div class="sitz p-30"></div>
-                    <div class="sitz p-30"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-30" data-preis="30"></div>
+                    <div class="sitz p-30" data-preis="30"></div>
                 </div>
 
                 <!-- Reihe 3 -->
-                <div class="reihe">
-                    <div class="sitz p-30"></div>
-                    <div class="sitz p-30"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-30" data-preis="30"></div>
+                    <div class="sitz p-30" data-preis="30"></div>
                 </div>
             </div>
 
@@ -56,21 +56,21 @@
                 <div class="abschnitt-name"><span>Orchester rechts</span></div>
 
                 <!-- Reihe 1-->
-                <div class="reihe">
-                    <div class="sitz p-30"></div>
-                    <div class="sitz p-30"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-30" data-preis="30"></div>
+                    <div class="sitz p-30" data-preis="30"></div>
                 </div>
 
                 <!-- Reihe 2 -->
-                <div class="reihe">
-                    <div class="sitz p-30"></div>
-                    <div class="sitz p-30"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-30" data-preis="30"></div>
+                    <div class="sitz p-30" data-preis="30"></div>
                 </div>
 
                 <!-- Reihe 3 -->
-                <div class="reihe">
-                    <div class="sitz p-30"></div>
-                    <div class="sitz p-30"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-30" data-preis="30"></div>
+                    <div class="sitz p-30" data-preis="30"></div>
                 </div>
             </div>
 
@@ -79,8 +79,8 @@
                 <div class="abschnitt-name"><span>Rollstuhl rechts</span></div>
 
                 <!-- Reihe 1-->
-                <div class="reihe">
-                    <div class="sitz p-00"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-00" data-preis="00"></div>
                 </div>
 
             </div>
@@ -91,84 +91,85 @@
         <div class="bereich vorne">
 
             <!--Parket Seite-links-->
-            <div class="abschnitt parkett-seite links orchester abgewinkelt ">
+            <div data-abschnitt="Parket Seite" data-seite="links"
+                 class="abschnitt parkett-seite links orchester abgewinkelt ">
                 <div class="abschnitt-name"><span>Parkett Seite links</span></div>
 
                 <!-- Reihe 1-->
-                <div class="reihe">
-                    <div class="sitz p-30"></div>
-                    <div class="sitz p-30"></div>
-                    <div class="sitz p-40"></div>
+                <div data-reihe="1" class="reihe">
+                    <div id="sitz-12" class="sitz p-30" data-preis="30"></div>
+                    <div id="sitz-13" class="sitz p-30" data-preis="30"></div>
+                    <div id="sitz-14" class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div id="sitz-15" class="sitz p-40" data-preis="40"></div>
+                    <div id="sitz-16" class="sitz p-60" data-preis="60"></div>
+                    <div id="sitz-17" class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 2 -->
-                <div class="reihe">
-                    <div class="sitz p-30"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                <div data-reihe="2" class="reihe">
+                    <div id="sitz-22" class="sitz p-30" data-preis="30"></div>
+                    <div id="sitz-23" class="sitz p-40" data-preis="40"></div>
+                    <div id="sitz-24" class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div id="sitz-26" class="sitz p-40" data-preis="40"></div>
+                    <div id="sitz-27" class="sitz p-60" data-preis="60"></div>
+                    <div id="sitz-28" class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 3 -->
-                <div class="reihe">
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                <div data-reihe="3" class="reihe">
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 4 -->
-                <div class="reihe">
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                <div data-reihe="4" class="reihe">
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 5 -->
-                <div class="reihe">
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                <div data-reihe="5" class="reihe">
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 6 -->
-                <div class="reihe">
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                <div data-reihe="6" class="reihe">
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 7 -->
-                <div class="reihe">
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                <div data-reihe="7" class="reihe">
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
                 </div>
 
             </div>
@@ -178,129 +179,129 @@
                 <div class="abschnitt-name"><span>Parkett links</span></div>
 
                 <!-- Reihe 1 - 11 sitze-->
-                <div class="reihe">
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
                 </div>
 
                 <!-- Reihe 2 -->
                 <div class="reihe versetzt">
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
                 </div>
 
                 <!-- Reihe 3 -->
-                <div class="reihe">
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
                 </div>
 
                 <!-- Reihe 4 -->
                 <div class="reihe versetzt">
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
                 </div>
 
                 <!-- Reihe 5 -->
-                <div class="reihe">
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
                 </div>
 
                 <!-- Reihe 6 -->
                 <div class="reihe versetzt">
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
                 </div>
 
                 <!-- Reihe 7 -->
-                <div class="reihe">
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
                 </div>
 
             </div>
@@ -310,122 +311,122 @@
                 <div class="abschnitt-name"><span>Parkett rechts</span></div>
 
                 <!-- Reihe 1 - 10 sitze-->
-                <div class="reihe">
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
                     <div class="sitz p-55 ausgewaehlt"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
                 </div>
 
                 <!-- Reihe 2 -->
                 <div class="reihe versetzt">
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
                 </div>
 
                 <!-- Reihe 3 -->
-                <div class="reihe">
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
                 </div>
 
                 <!-- Reihe 4 -->
                 <div class="reihe versetzt">
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
                 </div>
 
                 <!-- Reihe 5 -->
-                <div class="reihe">
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
                 </div>
 
                 <!-- Reihe 6 -->
                 <div class="reihe versetzt">
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
                 </div>
 
                 <!-- Reihe 7 -->
-                <div class="reihe">
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
 
-                    <div class="sitz p-50"></div>
+                    <div class="sitz p-50" data-preis="50"></div>
                 </div>
 
             </div>
@@ -437,80 +438,80 @@
                 <div class="abschnitt-name"><span>Parkett Seite rechts</span></div>
 
                 <!-- Reihe 1-->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-40"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-30"></div>
-                    <div class="sitz p-30"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-30" data-preis="30"></div>
+                    <div class="sitz p-30" data-preis="30"></div>
                 </div>
 
                 <!-- Reihe 2 -->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-40"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-30"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-30" data-preis="30"></div>
                 </div>
 
                 <!-- Reihe 3 -->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-40"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
                 </div>
 
                 <!-- Reihe 4 -->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-40"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
                 </div>
 
                 <!-- Reihe 5 -->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-40"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
                 </div>
 
                 <!-- Reihe 6 -->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-40"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
                 </div>
 
                 <!-- Reihe 7 -->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-40"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
                 </div>
 
             </div>
@@ -527,32 +528,32 @@
                 <div class="abschnitt-name"><span>Estrade Seite links</span></div>
 
                 <!-- Reihe 1-->
-                <div class="reihe">
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 2 -->
-                <div class="reihe">
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 3 -->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
                     <div class="sitz versteckt"></div>
                     <div class="sitz versteckt"></div>
@@ -560,10 +561,10 @@
                 </div>
 
                 <!-- Reihe 4 -->
-                <div class="reihe">
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
                     <div class="sitz versteckt"></div>
                     <div class="sitz versteckt"></div>
@@ -578,75 +579,75 @@
                 <div class="abschnitt-name"><span>Estrade links</span></div>
 
                 <!-- Reihe 1 - 11 sitze-->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 2 -->
                 <div class="reihe versetzt">
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
                 </div>
 
                 <!-- Reihe 3 - 11 sitze-->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 4 -->
                 <div class="reihe versetzt">
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
                 </div>
 
 
@@ -659,71 +660,71 @@
                 <div class="abschnitt-name"><span>Estrade rechts</span></div>
 
                 <!-- Reihe 1 - 10 sitze-->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 2 -->
                 <div class="reihe versetzt">
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
                 </div>
 
                 <!-- Reihe 3 - 10 sitze-->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
 
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 4 -->
                 <div class="reihe versetzt">
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
 
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
                 </div>
 
 
@@ -736,47 +737,47 @@
                 <div class="abschnitt-name"><span>Estrade Seite rechts</span></div>
 
                 <!-- Reihe 1-->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-40"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
                 </div>
 
                 <!-- Reihe 2 -->
-                <div class="reihe">
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-40"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
 
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
-                    <div class="sitz p-40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
+                    <div class="sitz p-40" data-preis="40"></div>
                 </div>
 
                 <!-- Reihe 3 -->
-                <div class="reihe">
+                <div class="reihe" data-reihe="0">
                     <div class="sitz versteckt"></div>
                     <div class="sitz versteckt"></div>
                     <div class="sitz versteckt"></div>
 
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
-                    <div class="sitz p-60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
+                    <div class="sitz p-60" data-preis="60"></div>
                 </div>
 
                 <!-- Reihe 4 -->
-                <div class="reihe">
+                <div class="reihe" data-reihe="0">
                     <div class="sitz versteckt"></div>
                     <div class="sitz versteckt"></div>
                     <div class="sitz versteckt"></div>
 
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
-                    <div class="sitz p-55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
+                    <div class="sitz p-55" data-preis="55"></div>
                 </div>
 
             </div>
@@ -793,155 +794,155 @@
                 <div class="abschnitt-name"><span>Balkon links</span></div>
 
                 <!-- Reihe 1 - 12 sitze-->
-                <div class="reihe">
+                <div class="reihe" data-reihe="0">
                     <div class="sitz p-75 versteckt"></div>
                     <div class="sitz p-75 versteckt"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
                 </div>
 
                 <!-- Reihe 2 -->
-                <div class="reihe">
+                <div class="reihe" data-reihe="0">
                     <div class="sitz p-75 versteckt"></div>
                     <div class="sitz p-75 versteckt"></div>
                     <div class="sitz p-75 versteckt"></div>
 
                     <div class="sitz p-75 versteckt"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
                 </div>
 
                 <!-- Reihe 3-->
-                <div class="reihe">
+                <div class="reihe" data-reihe="0">
                     <div class="sitz p-75 versteckt"></div>
                     <div class="sitz p-75 versteckt"></div>
                     <div class="sitz p-75 versteckt"></div>
 
                     <div class="sitz p-75 versteckt"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
                 </div>
 
                 <!-- Reihe 4 -->
-                <div class="reihe">
+                <div class="reihe" data-reihe="0">
                     <div class="sitz p-75 versteckt"></div>
                     <div class="sitz p-75 versteckt"></div>
                     <div class="sitz p-75 versteckt"></div>
 
                     <div class="sitz p-75 versteckt"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
                 </div>
 
                 <!-- Reihe 5 -->
-                <div class="reihe">
+                <div class="reihe" data-reihe="0">
                     <div class="sitz p-75 versteckt"></div>
                     <div class="sitz p-75 versteckt"></div>
                     <div class="sitz p-75 versteckt"></div>
 
                     <div class="sitz p-75 versteckt"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
                 </div>
 
                 <!-- Reihe 6 (70)-->
-                <div class="reihe">
+                <div class="reihe" data-reihe="0">
                     <div class="sitz p-70 versteckt"></div>
                     <div class="sitz p-70 versteckt"></div>
                     <div class="sitz p-70 versteckt"></div>
 
                     <div class="sitz p-70 versteckt"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
                 </div>
 
                 <!-- Reihe 7 (70) -->
-                <div class="reihe">
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
                     <div class="sitz p-70 versteckt"></div>
 
                     <div class="sitz p-70 versteckt"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
                 </div>
 
                 <!-- Reihe 8 (70) -->
-                <div class="reihe">
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
                 </div>
 
             </div>
@@ -953,36 +954,36 @@
                 <div class="abschnitt-name"><span>Balkon rechts</span></div>
 
                 <!-- Reihe 1 - 12 sitze-->
-                <div class="reihe">
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
                     <div class="sitz p-75 versteckt"></div>
                     <div class="sitz p-75 versteckt"></div>
                 </div>
 
                 <!-- Reihe 2 -->
-                <div class="reihe">
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
                     <div class="sitz p-75 versteckt"></div>
 
                     <div class="sitz p-75 versteckt"></div>
@@ -991,17 +992,17 @@
                 </div>
 
                 <!-- Reihe 3-->
-                <div class="reihe">
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
                     <div class="sitz p-75 versteckt"></div>
 
                     <div class="sitz p-75 versteckt"></div>
@@ -1010,17 +1011,17 @@
                 </div>
 
                 <!-- Reihe 4 -->
-                <div class="reihe">
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
                     <div class="sitz p-75 versteckt"></div>
 
                     <div class="sitz p-75 versteckt"></div>
@@ -1029,17 +1030,17 @@
                 </div>
 
                 <!-- Reihe 5 -->
-                <div class="reihe">
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
 
-                    <div class="sitz p-75"></div>
-                    <div class="sitz p-75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
+                    <div class="sitz p-75" data-preis="75"></div>
                     <div class="sitz p-75 versteckt"></div>
 
                     <div class="sitz p-75 versteckt"></div>
@@ -1048,17 +1049,17 @@
                 </div>
 
                 <!-- Reihe 6 (70)-->
-                <div class="reihe">
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
                     <div class="sitz p-70 versteckt"></div>
 
                     <div class="sitz p-70 versteckt"></div>
@@ -1067,41 +1068,41 @@
                 </div>
 
                 <!-- Reihe 7 (70) -->
-                <div class="reihe">
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
                     <div class="sitz p-70 versteckt"></div>
 
                     <div class="sitz p-70 versteckt"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
                 </div>
 
                 <!-- Reihe 8 (70) -->
-                <div class="reihe">
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                <div class="reihe" data-reihe="0">
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
 
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
-                    <div class="sitz p-70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
+                    <div class="sitz p-70" data-preis="70"></div>
                 </div>
 
             </div>
@@ -1110,4 +1111,14 @@
 
     </div>
 
+</div>
+<div id="sitz-hover-info" style="display:none">
+    <div class="sitz-hover-info-content triangle-isosceles top">
+        <div class="sitz-hover-info-abschnitt">Abschnitt</div>
+        <hr class="sitz-hover-info-trenner">
+        <div><span class="sitz-hover-info-label">Reihe</span><span class="sitz-hover-info-reihe-nummer">5</span></div>
+        <div><span class="sitz-hover-info-label">Sitz</span><span class="sitz-hover-info-sitz-nummer">84</span></div>
+        <hr class="sitz-hover-info-trenner">
+        <div><span class="sitz-hover-info-label">Preis</span><span class="sitz-hover-info-preis">70.-</span></div>
+    </div>
 </div>

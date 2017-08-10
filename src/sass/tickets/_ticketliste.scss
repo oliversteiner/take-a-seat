@@ -1,0 +1,156 @@
+@import "farben";
+
+.sitz-liste-reihe,
+.sitz-liste-nummer,
+.sitz-liste-preis,
+.sitz-liste-gutschein {
+
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  font-family: "Lato", SFUIText, "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  min-width: 80px;
+
+}
+
+.sitz-liste-reihe {
+}
+
+.sitz-liste-nummer {
+  padding-right: 30px;
+
+}
+.sitz-liste-rabatt-preis,
+.sitz-liste-preis {
+  padding-right: 0px;
+  text-align: right;
+
+  color: $color-tickets-text-mittel;
+  font-family: "Lato-light", SFUIText, "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+
+
+.sitz-liste-klein {
+  font-size: 12px;
+  margin-right: 5px;
+  color: $color-tickets-text-mittel;
+
+}
+
+h3.sitz-liste-abschnitt {
+  /* Balkon links: */
+  font-family: Lato-Regular;
+  font-size: 14px;
+  color: #44857B;
+}
+.sitz-liste-rabatt,
+.sitz-liste-total {
+  display: flex;
+  justify-content: space-between;
+
+  border-top: solid 1px black;
+
+  padding: 10px;
+  margin-bottom: 20px;
+
+}
+
+.sitz-liste-rabatt{
+  margin-bottom: 0px;
+}
+
+.sitz-liste-total-sitze {
+
+}
+
+.sitz-liste-rabatt label,
+.sitz-liste-total label {
+  font-family: Lato, SFUIText, Muli, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  height: 14px;
+  line-height: 14px;
+
+  color: $color-tickets-schmuck;
+  padding-right: 10px;
+
+}
+
+#rabatt-wert,
+#rabatt-preis{
+  font-size: 16px;
+}
+
+
+
+
+
+// Tabelle
+
+article.preistabelle {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+table.preiskategorien {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+
+  tr > th,
+  tr > td {
+    padding: 3px;
+    border: none;
+  }
+
+  td.legende,
+  th.kategorie,
+  td.reihen,
+  td.preis {
+    background-color: white;
+  }
+
+  tr:hover {
+
+    td.legende,
+    th.kategorie,
+    td.reihen,
+    td.preis {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    cursor: pointer;
+  }
+
+
+
+  td.legende {
+  }
+
+  .unterbrecher hr {
+    margin: 2px;
+    padding: 0;
+    cursor: default;
+  }
+
+  .klein {
+    font-size: 0.8em;
+  }
+}
+
+// Allgemeine Informationen
+
+ul.allgemeine-informationen {
+  margin: 0;
+  padding: 0;
+}
+
+ul.allgemeine-informationen li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+//
