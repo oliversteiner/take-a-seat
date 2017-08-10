@@ -7,50 +7,94 @@
   padding-bottom: 10px;
 }
 
-#plan-content.uebersicht-modus {
-  position: absolute;
-  left: 50px;
-
-}
-
-#abschnitt-detail {
-  position: relative;
-  margin-left: 250px;
-}
-
 .abschnitt-detail {
 
-  &-name {
-    font-size: 20px;
+  &-abschnitt-name {
+    font-size: $font-tickets-size-groesser;
   }
 
-  &-seite {
-    font-size: 18px;
+  &-abschnitt-seite {
+    font-size: $font-tickets-size-gross;
   }
 
+  &-trenner {
+    padding: 0;
+    margin: 3px;
+    border: none;
+    border-bottom: solid 1px $color-tickets-border-hell;
+
+  }
   &-label {
-    font-size: 12px;
+    font-size: $font-tickets-size-klein;
+    padding-right: 5px;
 
-    display: inline-block;
-    width: 50px;
   }
 
   &-reihe-nummer,
   &-sitz-nummer,
   &-preis {
-    font-size: 18px;
+    display: inline-block;
+    font-size: 17px;
     font-weight: 700;
     text-align: right;
-    display: inline-block;
-    width: 40px;
-
+    margin-right: 10px;
   }
 
   &-preis {
     font-weight: inherit;
     color: $color-tickets-text-mittel;
-    font-family: $font-tickets-light;
-
+    font-size: $font-tickets-size-normal;
   }
 
 }
+
+#abschnitt-detail {
+  margin-left: 20px;
+  height: 150px;
+}
+
+#abschnitt-detail,
+#plan-ausschnitt-container {
+  display: none;
+}
+
+// nur bei Ausschnitt-Modus einblenden:
+
+#plan-well.modus-miniplan{
+
+  #abschnitt-detail,
+  #plan-ausschnitt-container {
+    display: block;
+
+  }
+
+
+
+
+}
+
+// Grid
+
+.plan-row {
+  display: flex;
+  justify-content: center;
+}
+
+.plan-col-center {
+}
+
+.plan-col-left {
+  display: flex;
+  margin-left: auto;
+  width: auto;
+}
+
+.plan-col-right {
+  display: flex;
+  margin-right: auto;
+  width: auto;
+}
+
+
+
+

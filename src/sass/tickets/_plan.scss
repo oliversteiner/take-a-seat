@@ -172,6 +172,10 @@ $color-miniplan-sitze: #737373;
   font-size: 15px;
 }
 
+.beschriftung-oben {
+  display: none;
+}
+
 .rollstuhl {
   margin-top: 20px;
 }
@@ -461,36 +465,19 @@ $color-miniplan-sitze: #737373;
   }
 }
 
-// SOLO --------------------
+// Ausschnittmodus --------------------
 
-#abschnitt-container {
-  .abschnitt {
-    pointer-events: none;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    position: relative;
-    opacity: 1;
-
-  }
-
-  .sitz {
-    width: 25px;
-    height: 25px;
-    margin: 2px;
-    pointer-events: all;
-  }
-
-}
-
-// uebersicht --------------------
-
-#plan-content.uebersicht-modus {
+#plan-well.modus-miniplan #plan-container {
 
   opacity: 1;
 
   .aufbauten {
     background-color: $color-aufbauten-miniplan;
+  }
+
+  .beschriftung-oben {
+    display: block;
+    font-size: $font-tickets-size-kleiner;
   }
 
   .abschnitt {
@@ -602,6 +589,51 @@ $color-miniplan-sitze: #737373;
 
 }
 
+// Ausschnitt-Modus Abschnitt
+#plan-well.modus-miniplan #plan-ausschnitt-container {
+
+  .abschnitt {
+    pointer-events: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    opacity: 1;
+
+  }
+  .reihe {
+    opacity: 1;
+  }
+
+  .sitz {
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+    pointer-events: all;
+    border-radius: 5px;
+    opacity: 1;
+
+  }
+
+}
+
+// nur im Auschnitt Modus Plan Hover
+#plan-well.modus-miniplan {
+
+  // aktuellen Ausschnitt hervorheben
+  #plan-container .abschnitt.ausschnitt-aktuell {
+    opacity: 1;
+
+  }
+
+  // Hover über den Miniplan
+  #plan-container:hover .abschnitt {
+    opacity: 0.5;
+
+  }
+
+}
+
 // sitz-hover-info -----------------------
 
 $color-hover-info: rgba(0, 0, 0, 0.7);
@@ -700,3 +732,5 @@ $color-hover-info: rgba(0, 0, 0, 0.7);
 .sitz.ausgewaehlt {
   background-color: $color-sitz-ausgewaehlt;
 }
+
+

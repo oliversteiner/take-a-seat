@@ -38,128 +38,168 @@
 
     <!-- Inhalt-Teil -->
 
-    <div id="plan-container"></div>
+    <div id="plan-well">
 
+        <div class="plan-row">
+            <div class="plan-col-left">
 
-    <div id="abschnitt-detail">
+                <!-- Plan -->
+                <div id="plan-container"></div>
 
-        <div class="abschnitt-detail-name">Abschnitt</div>
-        <div class="abschnitt-detail-Seite">Seite</div>
+            </div>
+            <div class="plan-col-right">
 
-        <div><span class="abschnitt-detail-label">Reihe</span><span class="abschnitt-detail-reihe-nummer">5</span></div>
-        <div><span class="abschnitt-detail-label">Sitz</span><span class="abschnitt-detail-sitz-nummer">84</span></div>
-        <div><span class="abschnitt-detail-label">Preis</span><span class="abschnitt-detail-preis">70.-</span></div>
+                <!-- Abschnitt und Sitz  Detail -->
+                <div id="abschnitt-detail">
+
+                    <div class="abschnitt-detail-abschnitt-name container-hover-info-abschnitt">Abschnitt</div>
+                    <div class="abschnitt-detail-abschnitt-seite container-hover-info-seite">Seite</div>
+                    <hr class="abschnitt-detail-trenner">
+                    <div>
+                        <span class="abschnitt-detail-label">Reihe</span>
+                        <span class="abschnitt-detail-reihe-nummer  container-hover-info-reihe-nummer">5</span>
+                        <span class="abschnitt-detail-label">Sitz</span>
+                        <span class="abschnitt-detail-sitz-nummer  container-hover-info-sitz-nummer">84</span>
+                    </div>
+
+                    <hr class="abschnitt-detail-trenner">
+                    <div>
+                        <span class="abschnitt-detail-label">Preis</span>
+                        <span class="abschnitt-detail-preis  container-hover-info-preis">70.-</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="plan-row">
+            <div class="plan-col-center">
+
+                <!-- Plan Ausschnitt -->
+                <div id="plan-ausschnitt-container"></div>
+            </div>
+        </div>
+
+        <div id="abschnitt-hover-info" style="display:none">
+            <div class="sitz-hover-info-content triangle-isosceles top">
+
+                <div class="sitz-hover-info-abschnitt  container-hover-info-abschnitt">Abschnitt</div>
+
+                <hr class="sitz-hover-info-trenner">
+                <div>
+                    <span class="sitz-hover-info-label">Preis</span>
+                    <span class="sitz-hover-info-preis  container-hover-info-preis">70.-</span>
+                </div>
+
+            </div>
+        </div>
 
     </div>
-
-    <div id="abschnitt-container"></div>
-
-
-
 
     <article class="preistabelle">
 
 
         <h3> Preiskategorien</h3>
-            <table class="table preiskategorien">
-                <tbody>
-                <tr class="p-30" data-kat-preis="30" data-kat-abschnitt="orchester">
-                    <td class="legende"></td>
-                    <th class="kategorie">Orchesterplätze</th>
-                    <td class="reihen"></td>
-                    <td class="preis">30.–</td>
-                    <td class="legende-last"></td>
-                </tr>
-                <tr>
-                    <td class="unterbrecher" colspan="5">
-                        <hr>
-                    </td>
-                </tr>
-                <tr class="p-55" data-kat-preis="55" data-kat-abschnitt="parkett">
-                    <td class="legende"></td>
-                    <th class="kategorie">Parkett I</th>
-                    <td class="reihen">Reihe 1-3</td>
-                    <td class="preis">55.–</td>
-                    <td class="legende-last"></td>
-                </tr>
-                <tr class="p-50" data-kat-preis="50" data-kat-abschnitt="parkett">
-                    <td class="legende"></td>
-                    <th class="kategorie">Parkett II</th>
-                    <td class="reihen">Reihe 4-7</td>
-                    <td class="preis">50.–</td>
-                    <td class="legende-last"></td>
-                </tr>
-                <tr class="p-60" data-kat-preis="60" data-kat-abschnitt="parkett-seite">
-                    <td class="legende"></td>
-                    <th class="kategorie">Parkett III <span class="klein">(Seite)</span></th>
-                    <td class="reihen">Reihe 1-9</td>
-                    <td class="preis">60.-</td>
-                    <td class="legende-last"></td>
-                </tr>
-                <tr class="p-40" data-kat-preis="40" data-kat-abschnitt="parkett-seite">
-                    <td class="legende"></td>
-                    <th class="kategorie">Parkett IV <span class="klein">(Seite)</span></th>
-                    <td class="reihen">Reihe 1-9</td>
-                    <td class="preis">40.–</td>
-                    <td class="legende-last"></td>
-                </tr>
-                <tr>
-                    <td class="unterbrecher" colspan="5">
-                        <hr>
-                    </td>
-                </tr>
-                <tr class="p-60" data-kat-preis="60" data-kat-abschnitt="estrade">
-                    <td class="legende"></td>
-                    <th class="kategorie">Estrade I</th>
-                    <td class="reihen">Reihe 8 / 10</td>
-                    <td class="preis">60.–</td>
-                    <td class="legende-last"></td>
-                </tr>
-                <tr class="p-55" data-kat-preis="55" data-kat-abschnitt="estrade">
-                    <td class="legende"></td>
-                    <th class="kategorie">Estrade II</th>
-                    <td class="reihen">Reihe 9 / 11</td>
-                    <td class="preis">55.–</td>
-                    <td class="legende-last"></td>
-                </tr>
-                <tr class="p-60" data-kat-preis="60" data-kat-abschnitt="estrade-seite">
-                    <td class="legende"></td>
-                    <th class="kategorie">Estrade III <span class="klein">(Seite)</span></th>
-                    <td class="reihen">Reihe 10 / 11</td>
-                    <td class="preis">60.–</td>
-                    <td class="legende-last"></td>
-                </tr>
+        <table class="table preiskategorien">
+            <tbody>
+            <tr class="p-30" data-kat-preis="30" data-kat-abschnitt="orchester">
+                <td class="legende"></td>
+                <th class="kategorie">Orchesterplätze</th>
+                <td class="reihen"></td>
+                <td class="preis">30.–</td>
+                <td class="legende-last"></td>
+            </tr>
+            <tr>
+                <td class="unterbrecher" colspan="5">
+                    <hr>
+                </td>
+            </tr>
+            <tr class="p-55" data-kat-preis="55" data-kat-abschnitt="parkett">
+                <td class="legende"></td>
+                <th class="kategorie">Parkett I</th>
+                <td class="reihen">Reihe 1-3</td>
+                <td class="preis">55.–</td>
+                <td class="legende-last"></td>
+            </tr>
+            <tr class="p-50" data-kat-preis="50" data-kat-abschnitt="parkett">
+                <td class="legende"></td>
+                <th class="kategorie">Parkett II</th>
+                <td class="reihen">Reihe 4-7</td>
+                <td class="preis">50.–</td>
+                <td class="legende-last"></td>
+            </tr>
+            <tr class="p-60" data-kat-preis="60" data-kat-abschnitt="parkett-seite">
+                <td class="legende"></td>
+                <th class="kategorie">Parkett III <span class="klein">(Seite)</span></th>
+                <td class="reihen">Reihe 1-9</td>
+                <td class="preis">60.-</td>
+                <td class="legende-last"></td>
+            </tr>
+            <tr class="p-40" data-kat-preis="40" data-kat-abschnitt="parkett-seite">
+                <td class="legende"></td>
+                <th class="kategorie">Parkett IV <span class="klein">(Seite)</span></th>
+                <td class="reihen">Reihe 1-9</td>
+                <td class="preis">40.–</td>
+                <td class="legende-last"></td>
+            </tr>
+            <tr>
+                <td class="unterbrecher" colspan="5">
+                    <hr>
+                </td>
+            </tr>
+            <tr class="p-60" data-kat-preis="60" data-kat-abschnitt="estrade">
+                <td class="legende"></td>
+                <th class="kategorie">Estrade I</th>
+                <td class="reihen">Reihe 8 / 10</td>
+                <td class="preis">60.–</td>
+                <td class="legende-last"></td>
+            </tr>
+            <tr class="p-55" data-kat-preis="55" data-kat-abschnitt="estrade">
+                <td class="legende"></td>
+                <th class="kategorie">Estrade II</th>
+                <td class="reihen">Reihe 9 / 11</td>
+                <td class="preis">55.–</td>
+                <td class="legende-last"></td>
+            </tr>
+            <tr class="p-60" data-kat-preis="60" data-kat-abschnitt="estrade-seite">
+                <td class="legende"></td>
+                <th class="kategorie">Estrade III <span class="klein">(Seite)</span></th>
+                <td class="reihen">Reihe 10 / 11</td>
+                <td class="preis">60.–</td>
+                <td class="legende-last"></td>
+            </tr>
 
-                <tr class="p-55" data-kat-preis="55" data-kat-abschnitt="estrade-seite">
-                    <td class="legende"></td>
-                    <th class="kategorie">Estrade IV <span class="klein">(Seite)</span></th>
-                    <td class="reihen">Reihe 10 / 11</td>
-                    <td class="preis">55.-</td>
-                    <td class="legende-last"></td>
-                </tr>
+            <tr class="p-55" data-kat-preis="55" data-kat-abschnitt="estrade-seite">
+                <td class="legende"></td>
+                <th class="kategorie">Estrade IV <span class="klein">(Seite)</span></th>
+                <td class="reihen">Reihe 10 / 11</td>
+                <td class="preis">55.-</td>
+                <td class="legende-last"></td>
+            </tr>
 
-                <tr>
-                    <td class="unterbrecher" colspan="5">
-                        <hr>
-                    </td>
-                </tr>
-                <tr class="p-75" data-kat-preis="75" data-kat-abschnitt="balkon">
-                    <td class="legende"></td>
-                    <th class="kategorie">Balkon I</th>
-                    <td class="reihen">Reihe 1-5</td>
-                    <td class="preis">75.–</td>
-                    <td class="legende-last"></td>
-                </tr>
-                <tr class="p-70" data-kat-preis="70" data-kat-abschnitt="balkon">
-                    <td class="legende"></td>
-                    <th class="kategorie">Balkon II</th>
-                    <td class="reihen">Reihe 6-8</td>
-                    <td class="preis">70.–</td>
-                    <td class="legende-last"></td>
+            <tr>
+                <td class="unterbrecher" colspan="5">
+                    <hr>
+                </td>
+            </tr>
+            <tr class="p-75" data-kat-preis="75" data-kat-abschnitt="balkon">
+                <td class="legende"></td>
+                <th class="kategorie">Balkon I</th>
+                <td class="reihen">Reihe 1-5</td>
+                <td class="preis">75.–</td>
+                <td class="legende-last"></td>
+            </tr>
+            <tr class="p-70" data-kat-preis="70" data-kat-abschnitt="balkon">
+                <td class="legende"></td>
+                <th class="kategorie">Balkon II</th>
+                <td class="reihen">Reihe 6-8</td>
+                <td class="preis">70.–</td>
+                <td class="legende-last"></td>
 
-                </tr>
-                </tbody>
-            </table>
+            </tr>
+            </tbody>
+        </table>
 
     </article>
 
