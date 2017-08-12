@@ -1,0 +1,48 @@
+@import "variablen";
+
+
+div, p, h1, h2, h3, h4, ul, ol, table, td, th,  a {
+  font-family: $font-tickets;
+}
+
+h1, h3 ul, ol, ul {
+  font-family: $font-tickets-light;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 18px;
+
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px silver;
+}
+
+h3 {
+  color: $color-tickets-schmuck;
+  font-size: 15px;
+  padding-left: 15px;
+}
+
+
+
+// Text Styles --------------------------
+
+.text-klein {
+  font-size: 16px;
+  color: #333333;
+}
+
+.info-normal {
+  font-size: 13px;
+  color: #4A4A4A;
+}
+
+
+
+
+

@@ -1,0 +1,64 @@
+@import "variablen";
+
+
+section.section-ticket{
+position: absolute;
+display: none;
+  width: 100%;
+
+}
+
+section.section-ticket#start-content{
+  display: block;
+  width: 100%;
+
+}
+
+
+
+section.section-ticket {
+
+  // iphone 7 size
+  // width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+
+
+//  border: 1px solid gainsboro;
+
+  header {
+
+    margin: 0;
+    padding: 0;
+  }
+
+  article {
+
+    margin: 0;
+    padding: 0;
+  }
+
+  footer {
+    margin: 0;
+    padding: 20px;
+
+  }
+
+
+
+// Debug ------------------------------
+
+.debug-page-name {
+  position: absolute;
+  left: 49vw;
+
+  font-size: 12px;
+
+  display: none;
+
+}
+
+

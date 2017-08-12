@@ -561,11 +561,14 @@
 
     </div>
 
-    <article class="preistabelle">
+
+    <!-- Preis Kategorien -->
+
+    <article class="preis-kategorien">
 
 
         <h3> Preiskategorien</h3>
-        <table class="table preiskategorien">
+        <table class="table preis-kategorien">
             <tbody>
             <tr class="p-30" data-kat-preis="30" data-kat-abschnitt="orchester">
                 <td class="legende"></td>
@@ -2451,9 +2454,10 @@
         <!-- endinject -->
     </div>
 
+    <!-- Modals -->
 
     <div id="modal-plan-container">
-        <!-- inject:views/modal_plan.html -->
+        <!-- inject:views/modals/modal_plan.html -->
         <div id="modal-plan-content">
 
     <div id="modal-plan" class="modal fade" tabindex="-1" role="dialog">
@@ -2483,7 +2487,7 @@
     </div>
 
     <div id="modal-buchen-container">
-        <!-- inject:views/modal_buchen.html -->
+        <!-- inject:views/modals/modal_buchen.html -->
         <div id="modal-buchen-content">
     <div id="modal-buchen" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog">
@@ -2509,6 +2513,25 @@
                                     <p> Viel Spass an der Operette!</p>
                                 </div>
 
+
+                                <div class="block-optionen">
+                                    <div class="modal-buchen-newsletter">
+                                    <form>
+                                        <div class="checkbox">
+
+                                        <label for="buchen-newsletter">
+                                            <input type="checkbox" name="buchen-newsletter" id="buchen-newsletter">
+
+                                            <span class="text-klein">Ich möchte gerne über Neuigkeiten der Operette
+                                                Möriken-Wildegg informiert werden.
+                                                <br>
+                                                (ca. 2 x pro Jahr)
+                                            </span>
+                                        </label>
+                                        </div>
+                                    </form>
+                                    </div>
+                                </div>
 
                             </div>
                             <div class="row">

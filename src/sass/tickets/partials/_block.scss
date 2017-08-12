@@ -1,0 +1,67 @@
+@import 'variablen';
+
+// -all Blocks -------------------------
+
+@mixin block {
+
+  // border: 1px solid silver;
+
+  // Grösse
+  min-height: 44px;
+
+  // Abstand
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+
+}
+
+// -navigation -------------------------
+
+.block-navigation {
+  @include block;
+  margin: 0;
+  padding: 0;
+}
+
+// -titel ------------------------------
+
+.block-titel {
+  @include block;
+
+  // Textausrichtung
+  text-align: center;
+  vertical-align: top;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// -anleitung --------------------------
+
+.block-anleitung {
+  @include block;
+
+  // Textausrichtung
+  text-align: center;
+  vertical-align: top;
+
+  p {
+    font-family: $font-tickets-light;
+    font-size: 19px;
+    line-height: 23px;
+    color: $color-tickets-schmuck;
+
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// -optionen ---------------------------
+
+.block-optionen {
+  @include block;
+
+}
+

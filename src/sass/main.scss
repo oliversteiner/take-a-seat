@@ -15,26 +15,37 @@
 @import 'partials/views/footer';
 @import "partials/views/help";
 @import "partials/views/modal_center";
-@import "tickets/plan";
+@import "tickets/pages/plan";
 
 
 // Tickets
-@import "tickets/farben";
-@import "tickets/buttons";
-@import "tickets/tickets";
 
-@import "tickets/plan";
-@import "tickets/start";
-@import "tickets/datum";
-@import "tickets/sitzplan";
-@import "tickets/adresse";
-@import "tickets/zusammenfassung";
-@import "tickets/ticketliste";
+// - Partials
+@import "tickets/partials/variablen";
+@import "tickets/partials/fonts";
+@import "tickets/partials/buttons";
+@import "tickets/partials/block";
 
-// Modals
-@import "tickets/modal_buchen";
-@import "tickets/modal_plan";
+// -
+@import "tickets/partials/sematic_layout";
 
+
+// - Pages
+@import "tickets/pages/plan";
+@import "tickets/pages/start";
+@import "tickets/pages/datum";
+@import "tickets/pages/sitzplan";
+@import "tickets/pages/adresse";
+@import "tickets/pages/zusammenfassung";
+
+// - Articles
+@import "tickets/articles/liste_tickets";
+@import "tickets/articles/liste_preis_kategorien";
+
+
+// - Modals
+@import "tickets/modals/buchen";
+@import "tickets/modals/plan";
 
 
 // Editor
